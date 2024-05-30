@@ -1,0 +1,138 @@
+﻿^XA
+^FX Etiqueta Secundaria Israel
+^LT0
+^LH30,60
+^PW1200
+~JSN
+^CI0
+^MTT
+
+^FX Version
+^FT1000,1675^A0B,29^FD01^FS
+^FT950,1675^A0B,29^FDMIO^FS   
+
+^FX Encabezado
+^FT175,1675^A0B,33^FH%^FDEstablecimiento Faenador/Sacrificado en: Runfo SA - Estab. N%f8 Of.: 3203^FS ^fx
+^FT210,1675^A0B,33^FH%^FDEstablecimiento Elaborador/Despiece en: RUNFO SA - Estab. N%f8 Of.: 3203^FS
+^FT245,1675^A0B,33^FH%^FDAv Rio De La Plata 7650, Virrey Del Pino, La Matanza, Bs. As., Argentina^FS
+
+^FX Datos del producto
+^FT295,1675^A0B,50^FH\^FD[@definicionescuartos.sdescripcion;FI2@]^FS
+^FT350,1675^A0B,50^FH\^FD[@definicionescuartos.sdescripcion;FI5@]^FS
+^FT425,1675^A0B,75,67^FH\^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
+
+^FO370,0
+^GB55,400,2,b,3^fs
+^FT415,400^A0B,50^FB400,1,,c^FD[@Contramarcas.sDescripcion@]^FS
+
+^Fo430,0^GB0,1675,4^FS ^FX linea separacion mercaderia-detalle
+
+^FX Datos Produccion
+
+^FT475,1675^A0B,42^FH%^FDKEEP FROZEN AT -18%f8C. DO NOT REFREEZE.^FS
+^FT520,1675^A0B,42^FH%^FDCONSERVAR CONGELADO A -18%f8C. NO RECONGELAR.^FS
+
+^FX Lote / tropa
+^FO437,0
+^GB90,450,2,b,3^fs
+^FT465,440^A0B,28^FH\^FH\^FDLOTE/LOT^FS
+^FT465,320^A0B,28,29^FB315,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS
+^FT495,440^A0B,28^FH\^FDTROPA^FS
+^FT495,320^A0B,28,24^FB315,1,0,C^FH\^FD[@datosfrigo.itropa1@]  [@datosfrigo.itropa2@]  [@datosfrigo.itropa3@]^FS
+^FT520,320^A0B,28,24^FB315,1,0,C^FH\^FD[@datosfrigo.itropa4@]  [@datosfrigo.itropa5@]^FS
+
+^FX Block Packed si es necesario
+^FT360,800^A0B,50,30^FB600,1,0,R^FH^FD[@MercaderiasTraducciones.sDescripcion6@]^fs
+
+^FT560,1675^A0B,29^FB380,1,0,C^FH\^FDPRODUCTION DATE^FS
+^FT590,1675^A0B,29^FB380,1,0,C^FH\^FDFECHA DE ELABORACION^FS
+^FT650,1675^A0B,58^FB380,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+
+^FT560,1295^A0B,29^FB380,1,0,C^FH\^FDFREEZING DATE^FS
+^FT590,1295^A0B,29,27^FB380,1,0,C^FH\^FDFECHA DE CONGELACION^FS
+^FT650,1295^A0B,58^FB380,1,0,C^FH\^FD[@FechaCongelado.dFecha;FFdd/MM/yyyy@]^FS
+
+^FT560,915^A0B,29^FB380,1,0,C^FH\^FDEXPIRATION DATE^FS
+^FT590,915^A0B,29^FB380,1,0,C^FH\^FDFECHA DE VENCIMIENTO^FS
+^FT650,915^A0B,58^FB380,1,0,C^FH\^FD[@Fechavencimiento.dfecha;FFdd/MM/yyyy@]^FS
+
+^FT560,535^A0B,29^FB380,1,0,C^FH\^FDSLAUGHTER DATE^FS
+^FT590,535^A0B,29^FB380,1,0,C^FH\^FDFECHA FAENA^FS
+^FT650,535^A0B,58^FB380,1,0,C^FH\^FD[@DAtosFrigo.dFechaFaena;FFdd/MM/yyyy@]^FS
+
+
+
+^FX Tabla pesos
+
+^FO660,145^GB250,1530,4^FS ^FX 400 NETO
+^FO660,580^GB250,0,4^FS ^FX 300 BOLSA
+^FO660,850^GB250,0,4^FS ^FX 300 CAJA
+^FO660,1120^GB250,0,4^FS ^FX 400 BRUTO
+^FO660,1450^GB250,0,4^FS ^FX 400 CANT
+
+^FO660,145^GB250,1530,4^FS ^FX 400 NETO
+^FO660,580^GB250,0,4^FS ^FX 300 BOLSA
+^FO660,850^GB250,0,4^FS ^FX 300 CAJA
+^FO660,1120^GB250,0,4^FS ^FX 400 BRUTO
+^FO660,1450^GB250,0,4^FS ^FX 400 CANT
+
+^FT690,1675^A0B,29^FB225,1,0,C^FH\^FDCONTENIDO^FS
+^FT720,1675^A0B,29^FB225,1,0,C^FH\^FDCONTENT^FS
+^FT885,1675^A0B,117^FB225,1,0,C^FH\^FD[@stock.ncantidad;FD0@]^FS
+
+^FT690,1450^A0B,29^FB330,1,0,C^FH\^FDPESO BRUTO^FS
+^FT720,1450^A0B,29^FB330,1,0,C^FH\^FDGROSS WEIGHT^FS
+^FT885,1450^A0B,100^FB270,1,0,R^FH\^FD[@PesoBruto;FK0.00@]^FS
+^FT882,1180^A0B,45^FDKG^FS
+
+^FT690,1120^A0B,29^FB270,1,0,C^FH\^FDTARA DE CAJA^FS
+^FT720,1120^A0B,29,27^FB270,1,0,C^FH\^FDCARTON TARE WEIGHT^FS
+^FT885,1120^A0B,100^FB210,1,0,R^FH\^FD[@envasesSecundarios.ipeso;FK0.00@]^FS
+^FT885,910^A0B,45^FDKG^FS
+
+^FT690,850^A0B,29^FB270,1,0,C^FH\^FDTARA DE BOLSA^FS
+^FT720,850^A0B,29^FB270,1,0,C^FH\^FDBAG TARE WEIGHT^FS
+^FT885,850^A0B,100^FB210,1,0,R^FH\^FD[@envasesprimarios.ipeso;FK0.00@]^FS
+^FT885,640^A0B,45^FDKG^FS
+
+^FT690,580^A0B,29^FB435,1,0,C^FH\^FDNET WEIGHT / PESO NETO^FS
+^FT880,580^A0B,125^FB375,1,0,R^FH\^FD[@Stock.ipeso;FK0.00@]^FS
+^FT880,205^A0B,45^FDKG^FS
+
+
+^FX Codbars
+^FX codbar CLIENTE
+^BY5,3,100^FT110,1550^BCB,,N,N
+^FD>;[@MercaderiasTraducciones.sDescripcion1@]0[@Stock.ipeso;FK00.00-FPNO@][@Fechavencimiento.dfecha;FFddMMyyyy@][@Planesdetallesalida.planid@]^FS
+^FT140,1650^A0B,33,54^FB1070,1,,C^FD[@MercaderiasTraducciones.sDescripcion1@]0[@Stock.ipeso;FK00.00-FPNO@][@Fechavencimiento.dfecha;FFddMMyyyy@][@Planesdetallesalida.planid@]^FS
+^FX codbar vertical
+^BY3,3,100^FT900,0^BCI,,N,N
+^FD>;[@stock.scodbar@]^FS
+^FT900,108^A0I,45^FH\^FD[@stock.Scodbar@]^FS
+^FX codbar principal
+^BY7,3,105^FT1020,1567^BCB,,N,N
+^FD>;[@stock.scodbar@]^FS
+^FT1070,1650^A0B,60,140^FH\^FD[@stock.Scodbar@]^FS
+^FX datamatrix
+^BY198,198^FT15,200^BXN,15,200,0,0,5,~,1
+^FH\^FD[@encajonado.scodbar@]^FS
+
+^FT950,570^A0B,42^FH\^FDSENASA N\F8 3203/89485/1^FS
+^FT990,570^A0B,42^FDINDUSTRIA ARGENTINA^FS^FS
+
+^FX Datos codigo, encajonado, plan
+
+^FT1025,650^A0B,33^FH\^FDPlan [@MercaderiasTraducciones.sDescripcion2@] [@Planesdetallesalida.planid@]^FS 
+^FT1055,650^A0B,33^FH\^FDCod [@mercaderias.scodigo@]^FS
+^FT1100,650^A0B,45^FH\^FDCaja [@encajonado.scodbar@]^FS
+
+
+^FX Imagenes
+
+^FX Logo Senasa
+^FO910,570^GFA,01152,01152,00012,:Z64:eJzt060RwzAQROHzCASqhOskKs0qLaW4BMEAjTb+AX4gN+OAkEwWfeixNfvCsjTMD7skK213WV3nAavCC9zgDg9YdIUfgRe4BX4G7hc8PrT+fmu/4Bz4FjgFnmCLPMMFdjjDCZ7gNXTa4aStezzD7lu3h+/6qb0AqBLUxg==:E2FD
+
+^FX Logo argentina
+^FO240,0^GFA,989,2720,16,:Z64:eJy91rFuHCEQBuBBSMZFFF7AOl7Dxcn4UfIIKa+4HJxSpPQr7SmFy3uEYLlwaaw0WEI7GXbZPYZISZW4sT7vrvlhZ2AB/sdP5JSpc+48dsbenvvHwH0O3I88gPzOA8hT59AGkiCe20DKi9c2kAoC20AqCtRNIJlEVm3ALKJsh3OCx7VHHtecmAf11FqO8r21wrccmJEtp+7cX5fRMYvcvZ7u5YDrbDy3DtyKzUYMvBpEBDYcDX5gRrhj92O4Yf/edsWlfysmynff/AFDW5AbsMF+y2DCYh3ceQQbF8uA9P5dTUlh7hERsHpbIhWPF7+P2qfDxXGvj3Ez2w0gwl5dnMlbdQymGn3nBHGrV7/RQMWxOtoR0q2eMkymZtqBWUyltoVb2KzXw7KMyJusN1tSDMwW+Zq7shhNUU8VpqZ7ZLlU/nc0eTZGkcGSx9URaD4WmYOtecgBaD1cnbAp18kHXQcP8/1Z+3liAxWUXa3GaXzxM802qeRFgWl+vkzNUV6Men6c7jIUGucFnrYmhZGGmTzP6rpU/VSWCtfqvZnN16paL5bFxs9ZlgAuaN92JWU7tu8Dc+exNW0/yJ3cg6eZrI7m7CnJNP4pfBZRv3qo72Ny6ZG5j8g7EcsqzPMopu0cfd2DRXEC52ubiUDegfW1DUWg2tiDqY+DeJlqRUHdMSnrdKOos1295K+/Li7Pycjq16jc1O81lH69eAvY7tdi5LWtkNe+wSOOzR5GjofL+7kyj6fSv8szHzUtCfXn4k1v9fUUuUPp187rcFpKWsHGoAbq34t9OUs+XOL79qwhD9a3loi9r1oLKqbW4JJhNgM3tXvnu794/2fr9IHZpk0XyHXmO3r+kofWySZ2wiTz1pmdn7Cz/HzdO8F8N3KbLJL0bX4xtue7puJ8aKwG/n0gPTUBm4F84jPi3x/levd98tx9z7wE7teB++y5+++p/ojsv8e6I1V033PwCf7Vzy8mT/Kb:677A^FS
+
+^PQ1,0,1,Y^XZ

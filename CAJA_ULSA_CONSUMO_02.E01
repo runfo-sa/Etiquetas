@@ -1,0 +1,117 @@
+﻿^XA
+^LT0
+^LH70,80
+^PW1200
+
+^CI0
+
+^FX Version
+^FT900,1675^A0B,29^FDMUO^FS
+^FT900,1600^A0B,29^FD02^FS
+
+^FT40,1675^A0B,38,38^FH%^FDEstablecimiento Faenador N%a7 Oficial : [@DatosFrigo.EstabFNroSenasa@] - [@DatosFrigo.EstabFDescripcion@]^FS
+^FT80,1675^A0B,38,38^FH%^FDElaborado por Establecimiento N%A7 Oficial 3203 Runfo S.A^FS
+^FT115,1675^A0B,33,28^FH%^FDAv. Rio de la Plata 7650 e/Dungenes y Dupuy, La Matanza, Provincia de Buenos Aires, CP 1763, Republica Argentina^FS
+^FT150,1675^A0B,33^FH%^FDComercializado por URIEN LOZA SA^FS
+^FT180,1675^A0B,29,27^FH%^FDComplejo Office Park, Edificio Cibra 2do. Piso %22I%22, 12 de Octubre y Panamericana Ramal Pilar KM 42.5^FS
+^FT210,1675^A0B,29^FH%^FDCP B1669CKH, Del Viso, Partido Pilar, Provincia de Buenos Aires, Republica Argentina^FS
+^FT240,1675^A0B,29^FH%^FDmail: info@urienloza.com.ar - TE: 02320-655560^FS
+
+
+^FT300,1675^A0B,60,50^FH\^FD[@definicionescuartos.sdescripcion@]^FS
+^FT390,1675^A0B,90^FH\^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
+^FO400,0^GB0,1675,4^FS ^FX linea separacion mercaderia-detalle
+
+^FX Datos Produccion
+^FT450,1675^A0B,45^FH%^FD[@temperaturas.sdescripcion;FI5@]^FS
+^FT530,1675^A0B,33^fb1200,2,,l^FH%^FD[@MercaderiasTraducciones.sDescripcion2@]^FS
+^FT450,400^A0B,45^FB400,1,,R^FH%^FDVENTA AL PESO^fs
+^FT500,400^A0B,45^FB400,1,,R^FH%^FD[@MercaderiasTraducciones.sDescripcion1@]^fs
+
+
+^FT560,1675^A0B,29^FB300,1,0,C^FH\^FDSLAUGHTER DATE^FS
+^FT590,1675^A0B,29^FB300,1,0,C^FH\^FDFECHA FAENA^FS
+^FT650,1675^A0B,58^FB300,1,0,C^FH\^FD[@DAtosFrigo.dFechaFaena;FFdd/MM/yyyy@]^FS
+
+^FT560,1350^A0B,29^FB300,1,0,C^FH\^FDPRODUCTION DATE^FS
+^FT590,1350^A0B,29^FB300,1,0,C^FH\^FDFECHA DE ELABORACION^FS
+^FT650,1350^A0B,58^FB300,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+
+^FT560,1025^A0B,29^FB300,1,0,C^FH\^FDEXPIRATION DATE^FS
+^FT590,1025^A0B,29^FB300,1,0,C^FH\^FDFECHA DE VENCIMIENTO^FS
+^FT650,1025^A0B,58^FB300,1,0,C^FH\^FD[@Fechavencimiento.dfecha;FFdd/MM/yyyy@]^FS
+
+^FX Lote / tropa
+^FO545,220^GB90,450,2,b,3^fs
+^FT573,660^A0B,28^FH\^FH\^FDLOTE/LOT^FS
+^FT573,540^A0B,28,29^FB315,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS
+^FT603,660^A0B,28^FH\^FDTROPA^FS
+^FT603,540^A0B,28,24^FB315,1,0,C^FH\^FD[@datosfrigo.itropa1@]  [@datosfrigo.itropa2@]  [@datosfrigo.itropa3@]^FS
+^FT628,540^A0B,28,24^FB315,1,0,C^FH\^FD[@datosfrigo.itropa4@]  [@datosfrigo.itropa5@]^FS
+
+^FX Tabla pesos
+
+^FO660,185^GB210,1500,4^FS ^FX 400 NETO
+^FO660,580^GB210,0,4^FS ^FX 300 BOLSA
+^FO660,850^GB210,0,4^FS ^FX 300 CAJA
+^FO660,1120^GB210,0,4^FS ^FX 400 BRUTO
+^FO660,1450^GB210,0,4^FS ^FX 400 CANT
+
+
+^FT720,1675^A0B,45^FB220,1,0,C^FH\^FDCONTENIDO^FS
+^FT830,1675^A0B,117^FB225,1,0,C^FH\^FD[@stock.ncantidad;FD0@]^FS
+
+^FT720,1450^A0B,45^FB330,1,0,C^FH\^FDPESO BRUTO^FS
+^FT830,1450^A0B,100^FB270,1,0,R^FH\^FD[@PesoBruto;FK0.00@]^FS
+^FT830,1180^A0B,38^FDkg^FS
+
+^FT720,1120^A0B,45,38^FB270,1,0,C^FH\^FDTARA DE CAJA^FS
+
+^FT830,1120^A0B,100^FB210,1,0,R^FH\^FD[@envasesSecundarios.ipeso;FK0.00@]^FS
+^FT830,910^A0B,38^FDkg^FS
+
+^FT720,850^A0B,45,38^FB270,1,0,C^FH\^FDTARA DE BOLSA^FS
+^FT830,850^A0B,100^FB210,1,0,R^FH\^FD[@envasesprimarios.ipeso;FK0.00@]^FS
+^FT830,640^A0B,38^FDkg^FS
+
+^FT720,580^A0B,45^FB400,1,0,C^FH\^FDPESO NETO^FS
+^FT830,580^A0B,125^FB340,1,0,R^FH\^FD[@Stock.ipeso;FK0.00@]^FS
+^FT830,235^A0B,38^FDkg^FS
+
+
+^FX Codbars
+
+^FX codbar vertical
+^BY3,3,100^FT900,0^BCI,,N,N
+^FD>;[@stock.scodbar@]^FS
+^FT900,108^A0I,45^FH\^FD[@stock.Scodbar@]^FS
+
+^FX codbar principal
+^BY8,3,105^FT1020,1630^BCB,,N,N
+^FD>;[@stock.scodbar@]^FS
+^FT1070,1650^A0B,60,140^FD[@stock.Scodbar@]^FS
+
+^FX datamatrix
+^BY198,198^FT15,200^BXN,15,200,0,0,5,~,1
+^FD[@encajonado.scodbar@]^FS
+
+
+^FX Datos codigo, encajonado, plan
+
+^FT910,600^A0B,42,36^FH\^FDSENASA N\F8 3203/131625/1^FS
+^FT950,600^A0B,42,38^FDINDUSTRIA ARGENTINA^FS^FS
+
+^FT990,680^A0B,42^FDPlan [@Planesdetallesalida.planid@]^FS
+^FT1030,680^A0B,42^FDCod. [@mercaderias.scodigo@]^FS
+^FT1075,680^A0B,42^FDCaja [@encajonado.scodbar@]^FS
+
+^FO960,0
+^GB115,300,3,b,3^fs
+^FT1070,300^A0B,60,45^FB280,2,,c^FD[@Contramarcas.sDescripcion@]^FS
+
+
+
+^FX Logo Senasa
+^FO870,600^GFA,01152,01152,00012,:Z64:eJzt060RwzAQROHzCASqhOskKs0qLaW4BMEAjTb+AX4gN+OAkEwWfeixNfvCsjTMD7skK213WV3nAavCC9zgDg9YdIUfgRe4BX4G7hc8PrT+fmu/4Bz4FjgFnmCLPMMFdjjDCZ7gNXTa4aStezzD7lu3h+/6qb0AqBLUxg==:E2FD
+
+^PQ1,0,1,Y^XZ

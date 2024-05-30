@@ -1,0 +1,82 @@
+﻿^XA
+^FX Etiqueta Primaria Israel Menudencias
+^FX Version 1.1
+^FX Fecha ultima modificacion: 11/01/2021
+
+~JSN
+^MNW
+^MTT
+^PON
+^PMN
+^LH10,25
+^JMA
+^JUS
+^LRN
+^MMT
+
+^FX Español
+
+^CI0
+
+^FX RECUADRO PARA CHEQUEAR MARGENES
+^FX FO0,0 GB1110,1330,1,,1 FS
+
+^FX NOMBRE PRODUCTO INGLES- ESPAÑOL. REF: PANTALLA 205, IDIOMA INGLES
+^FT0,470^A0N,42,40^FB1121,1,0,C^FH%^FD[@MercaderiasTraducciones.sDescripcion2@]^FS
+
+
+^FX MESES VALIDEZ REF: Pantalla 205, idioma Aleman
+^FT325,990^A0N,33^FD[@MercaderiasTraducciones.sDescripcion1@]^FS
+
+^FX FECHA PRODUCCION
+^FT80,1075^A0N,33,28^FB250,1,0,C^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+
+^FX FECHA VENCIMIENTO
+^FT30,1105^A0N,33,28^FB250,1,0,C^FD[@FechaVencimiento.dFecha;FFdd/MM/yyyy@]^FS
+
+^FX CODBAR EAN13 CLIENTE. PANTALLA 0011
+^FT820,1060^BY3
+^BEN,150,y,n
+^FD[@Mercaderias.sEan@]^FS
+
+^FX Datos Frigo
+^FT0,1160^A0N,25^FH\^FDFrigorifico Runfo S.A. - Av Rio de la Plata 7650, Bs. As., Argentina^FS
+
+^FX DEFINICION DE CUARTO
+^FT0,1185^A0N,25,23^FH\^FD[@definicionescuartos.sDescripcion;FI2@] / [@definicionescuartos.sDescripcion;FI5@]^FS
+
+^FX TEMPERATURA INGLES - ESPAÑOL
+^FT0,1210^A0N,25^FH\^FDKEEP FROZEN AT -18\F8C. ONCE THAWED DO NOT REFREEZE^FS
+^FT0,1235^A0N,25^FH\^FDMANTENER CONGELADO A -18\F8C. UNA VEZ DESCONGELADO NO RECONGELAR^FS
+
+^FX CODBAR ID PRIMARIA
+^BY4,3,80^FT100,1320^BCN,,n,N
+^FD>;[@Primarias.sCodbar@]^FS
+
+^FX COD SENASA. Pantalla 11
+^FT670,1265^A0N,25^FH\^FDSENASA N\F8 [@Mercaderias.sCodSenasa@]^FS
+^FT670,1292^A0N,25^FDINDUSTRIA ARGENTINA^FS
+
+^FX DATOS INTERNOS
+^FT1065,1220^A0B,25,24^FB80,1,0,R^FH\^FD[@Primarias.iPeso@]^FS
+^FT1065,1315^A0B,25,24^FB80,1,0,L^FH\^FD[@PlanesDetalleSalida.PlanId@]^FS
+^FT1090,1315^A0B,25,24^FB175,1,0,R^FH\^FD[@Mercaderias.sCodigo@]^FS
+^FT1040,1315^A0B,25,24^FB175,1,0,R^FH\^FD[@Primarias.sCodbar@]^FS
+
+^FX Vamos con el hebreo
+^CW1,E:tim002.TTF 
+^SEE:GB.DAT
+^CI28 
+
+^FX Nombre del Corte REF: Pantalla 205, idioma Italiano
+^FPR,0^FT1121,400^A1N,100^FB1121,1,0,C^FH%^FD[@MercaderiasTraducciones.sDescripcion3@]^FS
+
+
+^FX Ahora las imagenes
+
+^FX Logo Senasa
+^FO600,1220^GFA,00768,00768,00008,:Z64:
+eJxjYBg+oP7//z9Aiv8/EEC4YPo/hGaG0uxQmh9Ky0NpezS6Hkr/x04zEkkzo9EwcYg5/4jyFchfjFD1uMzFT//DQf9Bo3+g0R+g9AMofQBKN8CDkxmiHeKuD1C6gbYRTUUAALdVAHs=:0801
+
+^PQ1,0,1,Y
+^XZ

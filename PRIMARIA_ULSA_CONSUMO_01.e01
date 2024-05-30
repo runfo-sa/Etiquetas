@@ -1,0 +1,70 @@
+﻿^XA
+^MNW
+^MTT
+^LH10,20
+^CI0
+^MMT
+^JZN
+^PW1200
+^FX ETIQUETA ULSA CONSUMO
+^FT0,520^A0N,25,23^FB73,1,6,R^FDPUO01^FS
+
+^FX Encabezado
+^FT300,40^A0N,29^FB820,1,0,c^FH%^FDEstabablecimiento Faenador N%A7 Oficial [@PrimariaDatosFrigo.hEstabFid;FI4@] - [@PrimariaDatosFrigo.hEstabFid;FI6@]^FS
+^FT300,70^A0N,29^FB820,1,0,c^FH%^FDElaborado por Establecimiento N%A7 Oficial 3203 Runfo S.A^FS
+^FT300,100^A0N,29,27^FB820,1,0,c^FH%^FDAv. Rio de la Plata 7650 e/Dungenes y Dupuy, La Matanza^FS
+^FT300,130^A0N,29,27^FB820,1,0,c^FH%^FDProvincia de Buenos Aires, CP 1763, Republica Argentina^FS
+^FT300,160^A0N,29,27^FB820,1,0,c^FH%^FDComercializado por URIEN LOZA SA^FS
+^FT0,190^A0N,29,27^FB1120,1,0,c^FH%^FDComplejo Office Park, Edificio Cibra 2do. Piso %22I%22, 12 de Octubre y Panamericana Ramal Pilar KM 42.5^FS
+^FT0,220^A0N,29^FB1120,1,0,c^FH%^FDCP B1669CKH, Del Viso, Partido Pilar, Provincia de Buenos Aires, Republica Argentina^FS
+^FT0,250^A0N,29^FB1120,1,0,c^FH%^FDmail: info@urienloza.com.ar - TE: 02320-655560^FS
+
+^FX Datos corte
+^FT75,297^A0N,33^FH%^FDSENASA N%f8 [@Mercaderias.sCodSenasa@]^FS
+^FT75,333^A0N,33^FH%^FDINDUSTRIA ARGENTINA^FS
+
+^FT900,295^A0N,33^FH%^FDVENTA AL PESO^FS
+^FT700,330^A0N,33^FB420,1,0,R^FH%^FD[@MercaderiasTraducciones.sDescripcion1@]^FS ^FX Variable "ENVASADO AL VACIO"
+
+^FX Recuadro datos del producto
+
+^FO0,345^GB1120,150,6,,1^FS
+^FT6,390^A0N,38^FH%^FB1029,1,0,C^FD[@definicionescuartos.sDescripcion@]^FS
+^FT6,470^A0N,67^FH\^FB1029,1,0,C^FD[@mercaderiastraducciones.sdescripcion5@]^FS
+^FT1060,485^A0B,25^FB100,1,0,L^FD[@PrimariaDatosFrigo.iTropa@]^FS
+^FT1085,415^A0B,25^FB60,1,0,R^FD[@Primarias.iPeso@]^FS
+^FT1085,485^A0B,25^FB60,1,0,L^FD[@PlanesDetalleSalida.PlanId@]^FS
+^FT1110,490^A0B,25^FB140,1,0,C^FD[@mercaderias.sCODIGO@]^FS
+
+^FX Codbar
+^BY4,3,75
+^FO300,500^BCN,,Y,N
+^FD>;[@Primarias.sCodbar@]^FS
+
+^FX Temperatura
+^FT0,650^A0N,42^FB1120,1,0,C^FH%^FD[@temperaturas.sdescripcion;FI5@]^FS
+^FX Variable "UNA VEZ ABIERTO CONSUMIR DENTRO DE LOS 5 DIAS"
+^FT0,740^A0N,42^FB1120,2,0,C^FH%^FD[@MercaderiasTraducciones.sDescripcion2@]^FS 
+
+^FO870,500^GB250,40,2,,^FS ^FX Recuadro contramarca
+^FT875,533^A0N,33,30^fh\^FD[@Contramarcas.sDescripcion@]^FS
+
+
+^FX Fechas y lote
+^FT0,790^A0N,33^FB410,1,0,C^FH\^FDFECHA DE ELABORACION^FS
+^FT0,840^A0N,50^FB410,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+^FT410,790^A0N,33^FB410,1,0,C^FH\^FDFECHA DE VENCIMIENTO^FS
+^FT410,840^A0N,50^FB410,1,0,C^FH\^FD[@FechaVencimiento.dFecha;FFdd/MM/yyyy@]^FS
+^FT820,790^A0N,33^FB300,1,0,C^FH\^FDLOTE^FS
+^FT820,840^A0N,50^FB300,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS
+
+^FX Logo ULSA
+^FO80,0^GFA,05120,05120,00032,:Z64:
+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:E385
+
+^FX Logo SENASA
+^FO0,270^GFA,173,840,12,:Z64:eJy10jEOABEQBdARhdIRHMXROJqj7BGUClkbrPjFTkJkf/UaY/wgkqUmUo1pTs2uOVeKMq3AGmzBDlymBVgyVmDN2DC2C3abLgcecxLs0Hv+N3gX7nDyluG06bjgi3Fg7MH07RuM3zCBIziA/XQbQ3D07TPMnnPv/AG0LfWn:BA44
+
+
+^PQ1,0,1,Y^XZ
+

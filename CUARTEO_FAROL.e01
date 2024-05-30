@@ -1,0 +1,44 @@
+﻿^XA
+^FX Label Cuarteo - 12/05/2021
+
+~JSA ^FX Backfeed
+^LH20,450
+^CI0
+
+^FX recuadro para diseño - no esta en uso
+^FxO0,0GB420,1260,4fs
+
+
+^FT380,0^A0R,38^FDEst. of. Nro: 3203 - Matricula: 338-5^FS
+^FT330,0^A0R,38^FDTropa: [@PaletTropa1@] [@PaletTropa2@] [@PaletTropa3@]^FS
+^FT240,0^A0R,65^FB1000,1,,L^FD[@PaletMercaderiadescripcion1@]^FS
+
+^FX tabla
+^FO100,0^GB130,1200,4^fs
+^FO100,280^GB130,590,4^fs
+
+^FT195,0^A0R,33^FB280,1,,C^FDPESO NETO^FS
+^FT110,0^A0R,100,120^FB222,1,,R^FD[@paletPeso;FK0@]^FS
+^FT120,225^A0R,54^FDkg^FS
+
+^FT195,280^A0R,33^FB590,1,,C^FDFECHA DE FAENA^FS
+^FT110,280^A0R,100,120^FB590,1,,C^FD[@paletfechafaena1;FFdd/MM/yyyy@]^FS
+
+^FT195,880^A0R,33^FB320,1,,C^FDTROPA^FS
+^FT110,880^A0R,100^FB320,1,,C^FD[@PaletTropa1@]^FS
+
+^FT10,850^A0R,90^FDCANT: [@paletunidades;FD0@]^FS
+
+^FX Codbar legible humanos
+^FT0,1260^A0N,50,60^FB420,1,,C,0^FD[@paletizado.sCODBAR@]^FS
+
+^FX Codbar principal
+^BY6,3,90^FT0,50^BCR,,N,N
+^FD>;[@paletizado.sCODBAR@]^FS
+
+^FX Datamatrix
+^BY2,3,100^FT250,1200^BXN,12,200,0,0,2,~,1
+^FD[@paletizado.sCODBAR@]^FS
+
+^PQ1
+^XZ

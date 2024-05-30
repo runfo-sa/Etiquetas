@@ -1,0 +1,137 @@
+﻿^XA
+^FX Etiqueta Primaria China 5
+
+^FX CAMBIOS DE LA VERSION 5
+^FX Agrego logo GF
+^FX Cambio en variables de faenador
+^FX Agrego codigo de etiqueta 
+
+^FX CAMBIOS DE LA VERSION 4
+^FX Agrego leyendas "Sacrificado en" y "Despiece en"
+
+^FX CAMBIOS DE LA VERSION 3
+^FX Agrego Al encabezado el campo "Establecimiento Faenador". Utiliza variables para mostrar el n° de est y nombre del faenador. Para el nombre lee la traduccion a portugues de la planta faenadora (cargar en pantalla 36 la traduccion)
+^FX Vuelvo a ajustar margenes de la etiqueta. Tenemos unos 3.5mm por lado
+^FX Achique fuentes del encabezado para que entre la informacion. Tambien cambie la justificacion a centrado.
+^FX Acomodé posiciones y tamaños de campos senasa, venta al peso, mantener congelado (en todos los idiomas)
+^FX Achique cinco puntos la altura del codbar y lo aleje 30p del margen
+^FX Cambie el CI principal a 28 (utf) y deje CI0 solo para los campos de cuarto y producto en ing y esp.
+^FX Moví los campos en chino del final del codigo a sus respectivos lugares en base a la posicion en la etiqueta.
+
+^FX CAMBIOS DE LA VERSION 2
+^FX Modifiqué el comando LH: configura el eje Y en cero
+^FX EL comando LT ahora configura el eje Y
+^FX quité los comandos MN, PO, PM, JM, JU, LR, MM POR CONSIDERARLOS INNECESARIOS.
+^FX Agregué el comando PW
+
+~JSN ^FX BACKFEED normal
+^MTT ^FX TRANSFERENCIA TERMICA
+^PW1200 ^FX Ancho de impresion
+^LT35 ^FX Label Top
+^LH30,0 ^FX Label Home
+^JZN ^FX No reimprimir
+
+^CI28
+^CW1,E:ANMDS.TTF 
+^SEE:GB.DAT
+
+^FT0,650^A0N,18^FDSME01^FS
+^Fo0,0^GB1100,870,1^fs
+
+^FT0,52^A0N,65,74^FB316,1,0,C^FH\^FDSANTA^FS
+^FT0,104^A0N,65,74^FB316,1,0,C^FH\^FDMARTA^FS
+^FT0,156^A0N,65,74^FB316,1,0,C^FH\^FDFARM ^FS
+^FT240,144^A0N,42,40^FH%^FD%C2%AE^FS
+
+^FT300,25^A0N,28^FH%^FB800,1,,C^FDEstablecimiento Faenador / Sacrificado en: [@PrimariaDatosFrigo.hEstabFid;FI4@] - [@PrimariaDatosFrigo.hEstabFid;FI6@]^FS
+^FT300,53^A0N,28^FH%^FB800,1,,C^FDEstablecimiento Elaborador / Despiece en: RUNFO S.A.^FS
+^FT400,81^A0N,28^FH%^FDEst. N%C2%B0 Of./Establishment No./                      : 3203^FS ^FX ESTABLECIMIENTO
+^FT740,81^A1N,28^FH%^FD%E5%B7%A5%E5%8E%82%E6%B3%A8%E5%86%8C%E4%BB%A3%E7%A0%81^FS
+^FT300,106^A0N,25,22^FH%^FB800,1,,C^FDAV RIO DE LA PLATA 7650, VIRREY DEL PINO, LA MATANZA, BS. AS., ARGENTINA^FS
+^FT300,134^A0N,28^FH%^FB800,1,,C^FDDESTINATION: ONLY FOR PEOPLE'S REPUBLIC OF CHINA^FS
+^FT300,167^A1N,33^FH%^FB800,1,,C^FD%E7%9B%AE%E7%9A%84%E5%9C%B0%3A%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD^FS ^FX Destino: china
+170
+
+^ci0
+^FT0,200^A0N,33^FH\^FD[@definicionescuartos.sDescripcion;FI2@]^FS
+^FT0,230^A0N,33^FH\^FD[@definicionescuartos.sDescripcion@]^FS
+^FO0,280^GB1100,170,6,,1^FS
+^FT8,324^A0N,42,40^FH\^FD[@MercaderiasTraducciones.sDescripcion2@]^FS
+^FT8,365^A0N,42,40^FH\^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
+^ci28
+
+
+^FX Definicion de cuarto 
+^FT0,270^A1N,44^FH%^FD[@DefinicionesCuartos.sDescripcion;FI17@]^FS
+^FX Nombre del Corte
+^FT8,435^A1N,75^FH%^FD[@MercaderiasTraducciones.sDescripcion17@]^FS
+
+^FT1060,370^A0B,25,24^FB80,1,0,R^FD[@Primarias.iPeso@]^FS
+^FT1060,440^A0B,25,24^FB80,1,0,L^FD[@PlanesDetalleSalida.PlanId@]^FS
+^FT1085,452^A0B,25,24^FB170,1,0,C^FD[@Mercaderias.sCodigo@]^FS
+
+^FT78,490^A0N,42,40^FH%^FDSENASA N%C2%B0 [@Mercaderias.sCodSenasa@]^FS
+^FT78,528^A0N,42,40^FDINDUSTRIA ARGENTINA^FS
+
+^FT510,490^A0N,28^FB400,1,0,R^FDORIGEN: BS AS, ARGENTINA^FS
+^FX Origen: Bs As Argentina
+^FT460,522^A1N,30^FH%^FB450,1,0,R^FD%E5%8E%9F%E4%BA%A7%E5%9C%B0%3A%E5%B8%83%E5%AE%9C%E8%AF%BA%E6%96%AF%E8%89%BE%E5%88%A9%E6%96%AF-%E9%98%BF%E6%A0%B9%E5%BB%B7^FS
+^FX Venta al peso
+
+^FT610,557^A0N,29,28^FB300,1,0,R^FDSALE PER WEIGHT^FS
+^FT610,586^A0N,29,28^FB300,1,0,R^FDVENTA AL PESO^FS
+^FT610,620^A1N,34^FH%^FB300,1,0,R^FD%E7%A7%B0%E9%87%8D%E9%94%80%E5%94%AE^FS
+
+^FT0,557^A0N,29^FH%^FDKEEP AT -1%C2%B0/+2%C2%B0C^FS
+^FT0,586^A0N,29^FH%^FDCONSERVAR ENTRE -1%C2%B0 Y +2%C2%B0C^FS
+^FX Mantener congelado
+^FT0,620^A1N,34^FH%^FD^FS
+
+^FX Lote
+^FO915,460^GB185,173,3^FS
+^FT923,490^A0N,30,27^FB180,1,0,C^FH%^FDLote n%C2%B0/Lot No.^FS
+^FT923,520^A0N,30,28^FB180,1,0,C^FDTropa^FS
+^FT950,560^A1N,38^FH%^FD123%E6%89%B9%E5%8F%B7^FS
+^FT919,590^A0N,28^FB180,1,0,C^FD[@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS
+^FT919,620^A0N,28^FB180,1,0,C^FD[@PrimariaDatosFrigo.iTropa@]^FS
+^FO0,630^GB930,0,3^FS
+
+^FT65,663^A0N,30,55^FD[@Primarias.sCodbar@]^FS
+^BY4,3,70^FT30,735^BCN,,n,N
+^FD>;[@Primarias.sCodbar@]^FS
+
+^FT600,680^A0N,33^FDCHINA REG. NO.^FS
+^FT820,680^A1N,45^FH%^FD%E5%9C%A8%E5%8D%8E%E6%B3%A8%E5%86%8C%E7%BC%96%E5%8F%B7^FS
+^FT600,720^A0N,33^FB500,1,0,C^FDCARG01011909120106^FS
+
+^FX Fecha faena
+^FT0,760^A0N,25,24^FB367,1,0,C^FDSLAUGHTERING DATE^FS
+^FT0,785^A0N,25,24^FB367,1,0,C^FDFECHA DE FAENA^FS
+^FT0,825^A1N,44^FB367,1,0,C^FH%^FD%E5%B1%A0%E5%AE%B0%E6%97%A5%E6%9C%9F^FS
+^FT0,865^A0N,42,42^FB367,1,0,C^FD[@PrimariaDatosFrigo.dFechaFaena;FFdd/MM/yyyy@]^FS
+
+^FX Fecha Produccion
+^FT367,760^A0N,25,24^FB366,1,0,C^FDPRODUCTION DATE^FS
+^FT367,785^A0N,25,22^FB366,1,0,C^FDFECHA DE ELABORACION^FS
+^FT367,825^A1N,44^FB366,1,0,C^FH%^FD%E7%94%9F%E4%BA%A7%E6%97%A5%E6%9C%9F^FS
+^FT367,865^A0N,42,42^FB366,1,0,C^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+
+^FX Fecha vencimiento
+^FT733,760^A0N,25,24^FB367,1,0,C^FDEXPIRATION DATE^FS
+^FT733,785^A0N,25,22^FB367,1,0,C^FDFECHA DE VENCIMIENTO^FS
+^FT733,825^A1N,44^FB367,1,0,C^FH%^FD%E6%9C%89%E6%95%88%E6%9C%9F%E8%87%B3^FS
+^FT733,865^A0N,42,42^FB367,1,0,C^FD[@FechaVencimiento.dFecha;FFdd/MM/yyyy@]^FS
+
+^FX Ahora las imagenes
+
+^FX Logo Argentina 3203
+^FT975,280^GFA,01536,01536,00016,:Z64:
+eJzt0jFqwzAUBuCnCqLNXjuIuNALtJsKpr5KoBdIKBSXQmsw1FtygZKTdLAxOFt7gQ4KGroFhwzVYJIKS7albu3UIW/yJ1vv/bYMcKw/1NQRqmtum9RS2AsEpGgG+hk0/HFwlCrfnfWOsdxwfjEMw7XyMHJyk6xyy0Io5zzvvUvKIl93CerJrCmLoqhNWDm9bBRLcx838RUHlGbGhEbqSZTORaLT0oC3y8Zk6SetP83+g15nb6b/l2508WHmr3Mzt8uD5RPhTe+YyMNiu0cmH4SjcDW/95Bug/NTCMkL8yAf63EcWOvo0MZRjpWvO2cc14SyBgK/fb4CLD3K9oDb/WijJowp8wG9tgPUwdCQMtIFDJXj1joQhVEovdkCTCAPVN73reqn32ukjvuQrRvA+jucdMfQX/y20Cr1hXQciL3tkp4vXeO5beG6EoHrW7+091cPxP4/URWhnXQMu8R28NNMOPYjx88kKC0f6//UN4QJpls=:842C
+
+^FX Logo Senasa
+^FO0,427^GFA,01536,01536,00012,:Z64:
+eJztk7ENwjAQRR2liESTETKKl4A6o4RxEEvEo3gECooUUY7EBt0riHQSpoJfPb3iZP07O/fPF3Pacsw8ypolYScpiX3m84qVKNfgBtyCe7AHD2BRrsA1uDH4FtwZ/B578FDaa7Op5/7Jc8GFHq45F8wX1C/us/e/nWPwi8HP8JPB3+AjfIQP8GHnDJ36bfzLT/ARPqjnb7mj/4IL/fE8AIlaCSw=:F0F0
+
+
+^PQ1,0,1,Y
+^XZ

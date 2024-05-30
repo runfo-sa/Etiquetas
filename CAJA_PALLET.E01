@@ -1,0 +1,102 @@
+﻿^XA
+
+^FX Etiqueta CAJA_PALET.E01 
+^FX Version 2.0
+^FX Fecha : 16-06-2023
+
+^CI0
+^MMT
+^PW1200
+^LS0
+^LH0,0
+^FX Datos del Palet - no mover el código porque se rompe todo!
+^FT85,130^A0N,100,140^FH\^FD[@Paletizado.scodbar@]^FS ^FX Encabezado
+^FO0,35^GB550,,110^FS
+^FR^FO0,35^GB1050,,110^FS
+^FT50,130^A0N,100,120^FH\^FDPALET N\f8^FS
+
+^FX Codigo QR
+^FO900,115^BQN,2,10
+^FDHM,N[@Paletizado.scodbar@]^FS
+
+^FT50,260^A0N,80^FH\^FDPeso Bruto: [@PaletBruto;FK0.00@]kg.^FS
+^FT50,340^A0N,80^FH\^FDPeso Neto: [@paletpeso;FK0.00@]kg.^FS
+^FT50,440^A0N,80,90^FH\^FDF Prod: [@Identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+^FT50,540^A0N,100,115^FH\^FDCod: [@Paletizado.scodbar@]^FS
+^FT50,640^A0N,100,120^FH\^FDUnidades: [@Paletcajas@]^FS
+
+^FO50,655^GB1050,,110^FS^FR^FT50,748^A0N,100,120^FH\^FDF Venc: [@FechaVencimiento.dFecha;FFdd/MM/yyyy@]^FS
+
+^FX Contenido discriminado por mercaderia
+^FX tabla
+^FO50,770^GB1050,930,2^FS
+^FO50,840^GB1050,0,2^FS
+^FO180,770^GB0,930,2^FS
+^FO450,770^GB0,930,2^FS
+^FO950,770^GB0,930,2^FS
+
+^FX encabezado
+^FT50,825^A0N,53^FB130,1,0,C^FH\^FDCANT^FS
+^FT180,825^A0N,53^FB270,1,0,C^FH\^FDCODIGO^FS
+^FT450,825^A0N,53^FB500,1,0,C^FH\^FDDESCRIPCION^FS
+^FT950,825^A0N,53^FB150,1,0,C^FH\^FDPESO^FS
+
+^FX fila 1
+^FT50,910^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas1;FD0@]^FS
+^Ft180,910^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo1@]^FS
+^FT455,910^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion1@]^FS
+^FT950,910^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso1;FK0.00@]^FS
+^FX fila4 2
+^FT50,995^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas2;FD0@]^FS
+^Ft180,995^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo2@]^FS
+^FT455,995^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion2@]^FS
+^FT950,995^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso2;FK0.00@]^FS
+^FX fila 3
+^FT50,1080^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas3;FD0@]^FS
+^Ft180,1080^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo3@]^FS
+^FT455,1080^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion3@]^FS
+^FT950,1080^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso3;FK0.00@]^FS
+^FX fila 4
+^FT50,1165^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas4;FD0@]^FS
+^Ft180,1165^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo4@]^FS
+^FT455,1165^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion4@]^FS
+^FT950,1165^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso4;FK0.00@]^FS
+^FX fila 5
+^FT50,1250^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas5;FD0@]^FS
+^Ft180,1250^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo5@]^FS
+^FT455,1250^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion5@]^FS
+^FT950,1250^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso5;FK0.00@]^FS
+^FX fila 6
+^FT50,1335^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas6;FD0@]^FS
+^Ft180,1335^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo6@]^FS
+^FT455,1335^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion6@]^FS
+^FT950,1335^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso6;FK0.00@]^FS
+^FX fila 7
+^FT50,1420^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas7;FD0@]^FS
+^Ft180,1420^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo7@]^FS
+^FT455,1420^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion7@]^FS
+^FT950,1420^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso7;FK0.00@]^FS
+^FX fila 8
+^FT50,1505^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas8;FD0@]^FS
+^Ft180,1505^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo8@]^FS
+^FT455,1505^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion8@]^FS
+^FT950,1505^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso8;FK0.00@]^FS
+^FX fila 9
+^FT50,1590^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas9;FD0@]^FS
+^Ft180,1590^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo9@]^FS
+^FT455,1590^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion9@]^FS
+^FT950,1590^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso9;FK0.00@]^FS
+^FX fila 10
+^FT50,1675^A0N,42^FB130,1,0,C^FH\^FD[@PaletMercaderiaCajas10;FD0@]^FS
+^Ft180,1675^A0N,42^FB270,1,0,C^FH\^FD[@PaletMercaderiaCodigo10@]^FS
+^FT455,1675^A0N,42,25^FB495,1,0,L^FH\^FD[@PaletMercaderiaDescripcion10@]^FS
+^FT950,1675^A0N,42^FB150,1,0,C^FH\^FD[@PaletMercaderiaPeso10;FK0.00@]^FS
+^PQ4,0,1,Y^XZ
+
+^XA
+^FX datamatrix
+^FT1200,100^A0I,140,140^FB1200,1,,C^FH\^FD[@Paletizado.scodbar@]^FS
+^FO100,400^BXN,70,200,,,1,,1
+^FH\^FD[@Paletizado.scodbar@]^FS
+^FT0,1600^A0N,140,140^FB1200,1,,C^FH\^FD[@Paletizado.scodbar@]^FS
+^PQ4,0,1,Y^XZ
