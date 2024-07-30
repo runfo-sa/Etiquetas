@@ -1,0 +1,101 @@
+﻿^XA
+^LT0
+^LH60,120
+^PW1200
+^CI28
+
+^FX Logo Argentina 3203
+^FO820,360
+^GFA,621,2240,20,:Z64:eJzt07+K2zAYAPDPCKKlRGuGw36FQoeqnKnvUQ4KnXV0qIf0rODBN+Ueoa9xww0JGbwc9BVkAs3Wqu2igpGquP6jSDd2a77F4seHvj/IAP9lIB5QVm4DNGVT+diipmpPSTDUcHNCWDJ0w4sTS/gHa2LhWgxFdclF6toCsqNR1+gLipPV5tSWnTH3QtrSGbHmXPiSavremlhOpug8+0pKLqZJovaCZAKXq2YyrGMS222tdpOROdH2g8r6kTnWJaCKjoYTJLvvmorRzIZ3efGb0ZCRfw/pq83Yy4/eFh/5WFiyNBKY5+BsNQeDVbLVcOtYZEib7Q0486ZRtV7mv4hrF4Dv0lwSe8kwhrTGU8aIPfcNEtsehs7I0OnxUABlTANRg2EBGnJ208Ks6Q2v7RPi8pgH7/r70JP1rehqvO4Hjuzy0HbDGLbPcBhYWau5NQ7ZNC7gGvKfNu/tOBqgL/f60/4zTMPFEJl7ne1sXTnYHCJNdLKytcbdz6ZtXMG/CXZNEyw9U7Tw/5nOtGctlVUSmMDEM00lxp59oyrI+05vAzs8ZEHdwwOp/f72CtUqtAN41qjoGdvVvonfJrTcVKEV3mjnOMc5no8/4mrLhQ==:579F
+
+^FX Logo Senasa
+^FO450,280
+^GFA,173,840,12,:Z64:eJy10jEOABEQBdARhdIRHMXROJqj7BGUClkbrPjFTkJkf/UaY/wgkqUmUo1pTs2uOVeKMq3AGmzBDlymBVgyVmDN2DC2C3abLgcecxLs0Hv+N3gX7nDyluG06bjgi3Fg7MH07RuM3zCBIziA/XQbQ3D07TPMnnPv/AG0LfWn:BA44
+
+^FX Datos Senasa
+^FT450,260^A0N,60^FH\^FDRunfo S.A^FS
+^FT540,310^A0N,36^FH%^FDSENASA N%C2%B0 [@Mercaderias.sCodSenasa@]^FS
+^FT540,350^A0N,36^FH\^FDINDUSTRIA ARGENTINA^FS
+
+^FX Mercaderia Descripcion
+^FT0,120^A0N,50,50^FH%^FD[@MercaderiasTraducciones.sDescripcion2@]^FS
+^FT0,180^A0N,50,50^FH%^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
+
+^FX Datos Elaborador
+^FT0,275^A0N,36^FB400,2^FH\^FDEstablecimiento Faneador y Elaborador^FS
+^FT0,355^A0N,36^FB400,2^FH\^FDSlaughterhouse and Production Establishment^FS
+^FT0,440^A0N,36^FB800,2
+^FH%^FDEst. N%C2%B0 Of. 3203 - Av Rio de La Plata 7650, Virrey del Pino, La Matanza, Buenos Aires, Argentina^FS
+
+^FO0,450^GB950,0,4^FS
+
+^FX Corte Peso
+^FT0,490^A0N,36^FH\^FDPeso Bruto^FS
+^FT0,530^A0N,36^FH\^FDGross weight^FS
+^FT0,570^A0N,36^FH\^FDPeso Tara^FS
+^FT0,610^A0N,36^FH\^FDTare weight^FS
+^FT0,650^A0N,36^FH\^FDPeso Neto^FS
+^FT0,690^A0N,36^FH\^FDNet weight^FS
+
+^FT520,520^A0N,58,57^FH\^FD[@PesoBruto;FL0.00@]^FS
+^FT650,520^A0N,42,43^FH\^FDLb^FS
+^FT720,520^A0N,58,57^FH\^FD[@PesoBruto;FK0.00@]^FS
+^FT850,520^A0N,42,43^FH\^FDKg.^FS
+^FO00,535^GB950,0,2^FS
+^FT520,600^A0N,58,57^FH\^FD[@envasesSecundarios.ipeso;FL0.00@]^FS
+^FT650,600^A0N,42,43^FH\^FDLb^FS
+^FT720,600^A0N,58,57^FH\^FD[@envasesSecundarios.ipeso;FK0.00@]^FS
+^FT850,600^A0N,42,43^FH\^FDKg.^FS
+^FO0,615^GB950,0,2^FS
+^FT520,680^A0N,58,57^FH\^FD[@Stock.ipeso;FL0.00@]^FS
+^FT650,680^A0N,42,43^FH\^FDLb^FS
+^FT720,680^A0N,58,57^FH\^FD[@Stock.ipeso;FK0.00@]^FS
+^FT850,680^A0N,42,43^FH\^FDKg.^FS
+^FO0,700^GB950,0,4^FS
+
+^FX Datos Congelado
+^FT0,740^A0N,33^FH%^FDCONSERVAR CONGELADO A -18%c2%b0C - NO RECONGELAR^FS
+^FT0,780^A0N,33^FH%^FDKEEP FROZEN BELOW -18%c2%b0C - DO NOT REFREEZE^FS
+
+^FT0,820^A0N,33,36^FH\^FDFecha de Faena^FS
+^FT0,850^A0N,33,36^FH\^FDSlaugther Date^FS
+^FT0,890^A0N,33,36^FH%^FDFecha de Elaboraci%C3%B3n^FS
+^FT0,920^A0N,33,36^FH\^FDElaboration Date^FS
+^FT0,960^A0N,33,36^FH%^FDFecha de Congelaci%C3%B3n^FS
+^FT0,990^A0N,33,36^FH\^FDBest Before^FS
+^FT0,1030^A0N,33,36^FH\^FDFecha de Vencimiento^FS
+^FT0,1060^A0N,33,36^FH\^FDBest Before^FS
+
+^FT650,845^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+^FO0,857^GB950,0,2^FS
+^FT650,915^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+^FO0,927^GB950,0,2^FS
+^FT650,985^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+^FO0,997^GB950,0,2^FS
+^FT650,1055^A0N,58,57^FH\^FD[@Fechavencimiento.dFecha;FFdd/MM/yyyy@]^FS
+
+^FX Extras
+^FT0,1090^A0N,30^FH\^FDVenta al peso^FS
+^FT0,1120^A0N,30^FH\^FDSale per weight^FS
+^FT600,1110^A0N,37,36^FH\^FDLOTE: [@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS 
+^FT600,1150^A0N,37,36^FH\^FDTROPA: [@DatosFrigo.iTropa@]^FS 
+^FT600,1190^A0N,37,36^FH\^FDCODIGO: [@Mercaderias.sCodigo@]^FS
+^FT600,1250^A0N,29,24^FH\^FDORIGEN ARGENTINA^FS
+
+^FX Barcode Big
+^BY5,3,105
+^FT1060,1100
+^BCB,,Y,N
+^FC%,{,#
+^FD>;[@MercaderiasTraducciones.sDescripcion9@]0[@Stock.ipeso;FK00.00-FPNO@][@Fechavencimiento.dfecha;FFddMMyyyy@]{d{m^FS
+
+^FX codbar RUNFO QR
+^FT0,1400
+^BQN,2,10
+^FDHM,N[@stock.scodbar@]^FS
+^FX codbar RUNFO texto
+^FT0,1420^A0N,45^FD[@stock.scodbar@]^FS
+
+
+^PQ1,0,1,Y
+^XZ

@@ -15,10 +15,10 @@
 
 ^FX Encabezado
 
-^FT220,50^A0N,25^FB550,1,,C^FH%^FDEstab. Faenador: Estab. N%C2%B0 Of. 3203 - Runfo S.A.^FS
-^FT220,78^A0N,25^FB550,1,,C^FH%^FDEstab. Elaborador: Estab. N%C2%B0 Of. 3203 - Runfo S.A.^FS
-^FT220,106^A0N,25^FB550,1,,C^FH%^FDAv R%C3%ADo de La Plata 7650, Virrey del Pino,^FS
-^FT220,134^A0N,25^FB550,1,,C^FH%^FDBuenos Aires, Argentina^FS
+^FT250,50^A0N,25^FB550,1,,C^FH%^FDEstab. Faenador: Estab. N%C2%B0 Of. [@PrimariaDatosFrigo.hEstabFid;FI4@]^FS
+^FT250,78^A0N,25^FB550,1,,C^FH%^FDEstab. Elaborador: Estab. N%C2%B0 Of. 3203 - Runfo S.A.^FS
+^FT250,106^A0N,25^FB550,1,,C^FH%^FDAv R%C3%ADo de La Plata 7650, Virrey del Pino,^FS
+^FT250,134^A0N,25^FB550,1,,C^FH%^FDBuenos Aires, Argentina^FS
 ^FT780,123^A0N,117^FD[@Amparos.sCodigo;FI2@]^FS ^FX JC por exigencia de norma, cuando corresponde
 
 ^FT0,169^A0N,24,21^FB250,1,,C^FDURSPRUNG IN ARGENTINIEN^FS
@@ -29,7 +29,7 @@
 
 
 ^FT260,173^A0N,25,21^FB550,1,,C^FDSchlachten in/Sacrifie/Sacrificato/Slaughtered/Sacrificado en:^fs
-^FT260,198^A0N,25^FB550,1,,C^FH%^FDEstablecimiento N%C2%B0 Oficial 3203^FS
+^FT260,198^A0N,25^FB550,1,,C^FH%^FDEstablecimiento N%C2%B0 Oficial [@PrimariaDatosFrigo.hEstabFid@] - [@PrimariaDatosFrigo.hEstabFid;FI6@]^FS
 ^FT260,225^A0N,25^FB550,1,,C^FDZerlegt in / Divise / Dividere / Cut up / Despiece en:^fs
 ^FT260,250^A0N,25^FB550,1,,C^FH%^FDEstablecimiento N%C2%B0 Oficial 3203 - RUNFO SA^FS
 
@@ -40,6 +40,7 @@
 ^FO0,399^GB1100,158,3,,1^FS ^FX Recuadro Mercaderia
 ^FxO840,399^fxGB200,158,2^FxS ^FX Recuadro Peso Neto
 
+^CI10 ^FX Cambiamos el CI porque los datos de cuarto y mercaderia almacenados en Pi4 usan La code page 850. Motivo: compatibilidad con videojet (sino habría que almacenar los datos en Pi4 en utf-8 y latin 850, lo que no es ideal)
 
 ^FX Definicion de cuarto y mercadería
 ^FT0,287^A0N,29,25^FB870,1,,L^FH%^FD[@DEFINICIONESCUARTOS.SDESCRIPCION;FI1@]^FS
@@ -49,10 +50,7 @@
 ^FT0,395^A0N,29,25^FB870,1,,L^FH%^FD[@DEFINICIONESCUARTOS.SDESCRIPCION;FI5@]^FS
 ^FT0,450^A0N,46,32^FB835,1,,C^FH%^FD[@MercaderiasTraducciones.sDescripcion1@]^FS
 ^FT0,497^A0N,46,32^FB835,1,,C^FH%^FD[@MercaderiasTraducciones.sDescripcion3@]^FS
-
-^CI10
 ^FT0,547^A0N,46,41^FB835,1,,C^FH%^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
-^CI28
 
 ^FT860,460^A0N,29^FB150,2,,C^FH%^FDVENTA AL PESO^FS
 
@@ -119,16 +117,16 @@
 
 ^FX Vamos con los graficos!
 
-^FX Logo ULSA
-^FO0,20^GFA,03584,03584,00028,:Z64:
-eJztlr1u2zAQx0Vw4FKAa4YgfIWMGQxz7NhX6ZhBsGgEqJYCXrv5TVoGGTJ27VYGHTqWQRcGFXQ9fsl0RBkNunToDbbMH03e/8i7U9P8t2idXkQCYJEBgF1ADNmwvCSAWvDENgRMFRH/H1nfkA35Y27c/4WMVSZ12LTqTBed1TUWV+M1R4kLX7TmaBpMU46NpcVqInhyYlNhQsVvWWHy2ZzS1gQPoRumtUtrE2MV5hKjpsKabvTxJnPxOCScX7DGTGLNPDD0FNN+M8/aGWMTW82Zymw9Y/wUazK7OMHEjImJ8Rm7+DOmagzTqMrWE2MztvoL9gu+L7JHuNdN5cJ4ZqF/MWurzLsXCgt30KtYZnKhOcXYCXbwxcFOLfk5zBnHBAFkbIS93+MrJlMuM2JE1saNwv7IciEFqbsd7k0B/HQ2Sg3CBETwodv50ehdZDFj+IiFk3nWgc8FNkgAnrRbimNjiIJ3kRv8TRJ7eAB3vWlSBW343R1YmxixUrtwYyOjptva80LDgQlZ6gPcaX9gn0Y/VOgLw/jxFpc56MP1ACZ23cgRNQhXaAjuR1ZqsOSIdchsZsR4DSYy12yonjQcM9uMyFRmcU0b4oJVCco1oy+BaYYTC1/iGT262Mgs/VmcUdRu28TYg2d7M8WTg9pkpjGeU8xCrH3iBsZVEWtGrFCOH2ZSI0nWsEV91yJ3UwlB36rUF4IWLs0zfQOy5Bk+sElfOiNwSS2EM0q5AsLrk3kmKc7Wb9WBFak3gu8T0w486KPRUWziorhLIY9y24fQJ/izds29M7Tew8Mwr7XUcHqo/JjFOhHznxXPx6y0sobU2cG6KeBz44uvRH9lGH+p8CaltOVDJzH4Enq78aEGI0GlZsacFLDFQtK7DXZ+YuyVzI2OmnPW65Ztt+4MizzV15frzIh5ldjgGdMtsu6YKTIGplaX7XP2nnz0jKsVvt/8KJjybJ+Zaz6riX1uWjaQ/YfA1pigBRsD2yVGLfGNIjFo/Jr9l8QMgQPbJSbCfkzTkimv4cZJpt6oFde0N8f6bgN7jWx7QzM7T2yLLynqXreC9JnZM3ZjMGa3Ci+0usM8pe/y24+7Et+e8BzujcOUvzVWwr5P9xSsfHzC87u3WARB+/Pb9+nmxBfWyaR6yUX59+1Ujp3KzVNs0X4Doy8png==:914D
+^FX Logo CAMPO BEEF
+^FO5,10^GFA,04096,04096,00032,:Z64:
+eJzt1bGO2zAMAFAKHjT6xg5F/SNF9UsdOwSxDzf0t3TocGN/QUWHjqdRg2CVFCU5sSnf2KEnIIGTF8sSSTEA7+N9/L9jSm14+vDiYHxOK8ocJf+B/piSBZXSIjm+o+Ov6O3ozwEmRdcmpSC4DfAl+5xSPDh+EeGqnAqQrF4lv8BFOQgKMUl+RXPwbcDJ50Vwo8gvGhdnrOCT8uiftcdL0Z8c+Yibp9fBx+/seK8W/cU294Lr14Wcnj1IPmS/TEvPEzQPgmPgKD7k6uCU8+zBdD2iD+eO131fz11ld7LT+lMuza4POAXWd9c5vtCNj/5pm0vx5fxCNz9cH7DPr8uHjV6Db77VRzmsuT7Z7+rLbn7N9ctzV3ew+QVi9rDV7wo3HtnpfJhyPmj2sa4/0PnLZVLPV6Sg1/0pj+eXnpeWoZxP/DS3/P3Gk5999lNxoF7Q3GH/IDe1PwTQN/n/Q/3H8YK4v7hyO/urxf7lcp7zuqdEVze+gP6V41H6W6y3owtj8pBO3Q7nvrQKsJJ/4tjQWCT/qCqvEsOH9vjAX9DvF5zTmryih7G6Az4/974VqH3Iydp7jU6Cr6LX5a8qx9fvvS1PZw87b9vzo+hte85kjzvXLXozuhuiorTOwN07lwkPRfl3qufrIPsUOQBRZ4eDew5gGGU3jp/gjTy/cbwDO3fcFs/1e9zfXOpPseuw94V9KPVP8V0pacudr7q43zxXbPEwFncHzxkMU/3/lt2b8/ndfFzfrdtUPMr+yO7Gddv/rQ/F1SrGj7bP+UsHJ4pjzzm/tH32ee/+DQ+mhEd2ri4Kz5nb1FsfV9/jG/5UXe2dq0+nGv+1nj/HztUznnucmsedc/WYruf+4efmYe/zvfu906OfU3O797GGp/TvvQ+9zltH67ydYeTG30YO+Pv4R+MvHWy9SA==:6CFD
 
 ^FX Logo SENASA
 ^FO1,639^GFA,173,840,12,:Z64:eJy10jEOABEQBdARhdIRHMXROJqj7BGUClkbrPjFTkJkf/UaY/wgkqUmUo1pTs2uOVeKMq3AGmzBDlymBVgyVmDN2DC2C3abLgcecxLs0Hv+N3gX7nDyluG06bjgi3Fg7MH07RuM3zCBIziA/XQbQ3D07TPMnnPv/AG0LfWn:BA44
 
 ^FX Logo Argentina 3203
-^FO800,125^GFA,01536,01536,00016,:Z64:
-eJzt0jFqwzAUBuCnCqLNXjuIuNALtJsKpr5KoBdIKBSXQmsw1FtygZKTdLAxOFt7gQ4KGroFhwzVYJIKS7albu3UIW/yJ1vv/bYMcKw/1NQRqmtum9RS2AsEpGgG+hk0/HFwlCrfnfWOsdxwfjEMw7XyMHJyk6xyy0Io5zzvvUvKIl93CerJrCmLoqhNWDm9bBRLcx838RUHlGbGhEbqSZTORaLT0oC3y8Zk6SetP83+g15nb6b/l2508WHmr3Mzt8uD5RPhTe+YyMNiu0cmH4SjcDW/95Bug/NTCMkL8yAf63EcWOvo0MZRjpWvO2cc14SyBgK/fb4CLD3K9oDb/WijJowp8wG9tgPUwdCQMtIFDJXj1joQhVEovdkCTCAPVN73reqn32ukjvuQrRvA+jucdMfQX/y20Cr1hXQciL3tkp4vXeO5beG6EoHrW7+091cPxP4/URWhnXQMu8R28NNMOPYjx88kKC0f6//UN4QJpls=:842C
+^FO800,125^GFA,01920,01920,00020,:Z64:
+eJztlD1u2zAUx5/AANzCjhkE8QhdPRjmVXoEF11UIAgpeOhWXyBAjlIaHrL1DEw1eKwMLyxKiH38kuRk7VKgHCThR76/3hcfwP/1byzivdevmPRvIAvIj0tU+bT09bERkLkrtTHtqKXpEN7Cm4nR/E0WxrzYCD/L2cmg/JnM0nIonoSfVpHzIsjDpjh2N8G4GBiotOyP+wG9yjL4psNA+j0ayvwTlOMWWTdmHVTH7U07kEv3/QOw5BbBrdXKHy+d3gJNP6YGtiuQ/bdOn1WVcsgMsav7LUF20ZAYV8ytxsh6DTIFrngd2NPugExEByXU9epW9vtddzooHh18gHpdN/JCSffcKx5T6YA57sSPiuy+nhQ1yWXmaXCV7B5/YpSBWaD7Q1Qhj2OMIDzILtfjzhV2T1TOxp2jh6hiZFeq8K7lkVEjz4XB1mf20U01+vRLu8g+z/30/ndmYmbMq8QwMZaMGD0zN7wwLAf1SmphgUFityAc8wdv5MwY3G/4/sUP3kIzsbbhpDfDsIamSoxCe9tUvbbI6sRC0E1NTsrCOqYplRerhawFWxg+iAP6rNqQWbJgLLOUZxTFKDhF5goL0XJYI7vZhK6I7RdihxYZIEu1DN3AuoGqEAWkmmM3WLYzVFvdQO4N3HHsiyb6bJDJxAZkTCEbNtjkKbcWHgT3x5ezfQhexUo7kKPwL97gFcy9i8eZC0xjTnm+el4Ty5EoYaYLl29vA1SVbxDlqi6uKF/Wdy50YbJsU19ucuUnmWk00HlwyDIGxKzC87ARi4lVpfFF/SyXJp0ODzMznufacoaRzBamQT0utWTw9lhWvD4Wgn516m+uP18fl5M=:7F33
 
 ^PQ1
 ^XZ
