@@ -27,10 +27,11 @@
 ^FT295,1675^A0B,50^FH\^FD[@DEFINICIONESCUARTOS.SDESCRIPCION;FI2@]^FS
 ^FT350,1675^A0B,50,42^FH\^FD[@DEFINICIONESCUARTOS.SDESCRIPCION;FI5@]^FS
 ^FT425,1675^A0B,75,55^FH\^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
+^FT425,500^A0B,75,55^FB500,1,,R^FH\^FD[@MercaderiasTraducciones.sDescripcion2@]^FS
 
 ^FO450,460
-^GB55,400,2,b,1^fs
-^FT500,850^A0B,50^FB400,1,,c^FD[@Contramarcas.sDescripcion@]^FS
+^GB55,500,2,b,1^fs
+^FT500,950^A0B,50^FB500,1,,c^FD[@Contramarcas.sDescripcion@]^FS
 
 ^FO430,0^GB0,1675,4^FS ^FX linea separacion mercaderia-detalle
 ^FT120,670^A0B,70^FH%^FD[@MercaderiasTraducciones.sDescripcion4@]^FS
@@ -124,7 +125,7 @@
 
 ^FX Datos codigo, encajonado, plan
 ^FT992,1400^A0B,45,55^FH\^FDCAJA [@encajonado.scodbar@]^FS
-^FT890,1270^A0I,33^FH\^FDPlan [@MercaderiasTraducciones.sDescripcion2@][@Planesdetallesalida.planid@]^FS
+^FT890,1270^A0I,33^FH\^FDPlan [@Planesdetallesalida.planid@]^FS
 ^FT890,1310^A0I,33,26^FH\^FD[@mercaderias.scodigo@]^FS 
 
 ^FX Version

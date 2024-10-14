@@ -1,0 +1,106 @@
+﻿^XA
+
+^LT0
+^LH0,0
+^PW1200
+^FO40,40
+^GB1140,1740,20,B,0^FS
+
+^LH70,70
+^CI0
+
+^FX Version
+^FT900,1675^A0B,29^FDMRP^FS
+^FT900,1600^A0B,29^FD01^FS
+
+^FT40,1675^A0B,38,38^FH%^FDEstablecimiento Faenador N%a7 Oficial : [@DatosFrigo.EstabFNroSenasa@] - [@DatosFrigo.EstabFDescripcion@]^FS
+^FT80,1675^A0B,38,38^FH%^FDElaborado por Establecimiento N%A7 Oficial 3203 Runfo S.A^FS
+^FT115,1675^A0B,33,28^FH%^FDAv. Rio de la Plata 7650 e/Dungenes y Dupuy, La Matanza, Provincia de Buenos Aires, CP 1763, Republica Argentina^FS
+^FT150,1675^A0B,33^FH%^FDComercializado por FRIGORIFICO RIOPLATENSE SAICIF^FS
+^FT180,1675^A0B,29,27^FH%^FDAv. De los Constituyentes 2499 - B1617ABL / Gral.Pacheco / Provincia Buenos Aires / Argentina^FS
+^FT210,1675^A0B,29^FH%^FDORIGEN ARGENTINA^FS
+
+
+^FT300,1675^A0B,60,50^FH\^FD[@definicionescuartos.sdescripcion@]^FS
+^FT390,1675^A0B,90^FH\^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
+^FO400,0^GB0,1675,4^FS ^FX linea separacion mercaderia-detalle
+
+^FX Datos Produccion
+^FT450,1675^A0B,45^FH%^FD[@temperaturas.sdescripcion;FI5@]^FS
+^FT510,1675^A0B,30^fb1300,2,,l^FH%^FD[@MercaderiasTraducciones.sDescripcion2@]^FS
+^FT530,1675^A0B,25,27^fb1200,2,,l^FH%^FD[@MercaderiasTraducciones.sDescripcion9@]^FS
+^FT450,400^A0B,45^FB400,1,,R^FH%^FDVENTA AL PESO^fs
+^FT500,400^A0B,45^FB400,1,,R^FH%^FD[@MercaderiasTraducciones.sDescripcion1@]^fs
+
+^FT560,1675^A0B,29^FB300,1,0,C^FH\^FDPRODUCTION DATE^FS
+^FT590,1675^A0B,29^FB300,1,0,C^FH\^FDFECHA DE ELABORACION^FS
+^FT650,1675^A0B,58^FB300,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+
+^FT560,1350^A0B,29^FB300,1,0,C^FH\^FDEXPIRATION DATE^FS
+^FT590,1350^A0B,29^FB300,1,0,C^FH\^FDFECHA DE VENCIMIENTO^FS
+^FT650,1350^A0B,58^FB300,1,0,C^FH\^FD[@Fechavencimiento.dfecha;FFdd/MM/yyyy@]^FS
+
+^FT560,1025^A0B,29^FB300,1,0,C^FH\^FDLOT^FS
+^FT590,1025^A0B,29^FB300,1,0,C^FH\^FDLOTE^FS
+^FT650,1025^A0B,58^FB300,1,0,C^FH\^FD[@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS
+
+
+
+^FX Tabla pesos
+
+^FO660,185^GB210,1500,4^FS ^FX 400 NETO
+^FO660,580^GB210,0,4^FS ^FX 300 BOLSA
+^FO660,850^GB210,0,4^FS ^FX 300 CAJA
+^FO660,1120^GB210,0,4^FS ^FX 400 BRUTO
+^FO660,1450^GB210,0,4^FS ^FX 400 CANT
+
+
+^FT720,1675^A0B,45^FB220,1,0,C^FH\^FDCONTENIDO^FS
+^FT830,1675^A0B,117^FB225,1,0,C^FH\^FD[@stock.ncantidad;FD0@]^FS
+
+^FT720,1450^A0B,45^FB330,1,0,C^FH\^FDPESO BRUTO^FS
+^FT830,1450^A0B,100^FB270,1,0,R^FH\^FD[@PesoBruto;FK0.00@]^FS
+^FT830,1180^A0B,38^FDkg^FS
+
+^FT720,1120^A0B,45,38^FB270,1,0,C^FH\^FDTARA DE CAJA^FS
+
+^FT830,1120^A0B,100^FB210,1,0,R^FH\^FD[@envasesSecundarios.ipeso;FK0.00@]^FS
+^FT830,910^A0B,38^FDkg^FS
+
+^FT720,850^A0B,45,38^FB270,1,0,C^FH\^FDTARA DE BOLSA^FS
+^FT830,850^A0B,100^FB210,1,0,R^FH\^FD[@envasesprimarios.ipeso;FK0.00@]^FS
+^FT830,640^A0B,38^FDkg^FS
+
+^FT720,580^A0B,45^FB400,1,0,C^FH\^FDPESO NETO^FS
+^FT830,580^A0B,125^FB340,1,0,R^FH\^FD[@Stock.ipeso;FK0.00@]^FS
+^FT830,235^A0B,38^FDkg^FS
+
+
+^FX Codbars
+
+^FX codbar vertical
+^BY3,3,100^FT900,0^BCI,,N,N
+^FD>;[@stock.scodbar@]^FS
+^FT900,108^A0I,45^FH\^FD[@stock.Scodbar@]^FS
+
+^FX codbar principal
+^BY8,3,105^FT1020,1630^BCB,,N,N
+^FD>;[@stock.scodbar@]^FS
+^FT1070,1650^A0B,60,140^FD[@stock.Scodbar@]^FS
+
+^FX datamatrix
+^BY198,198^FT15,200^BXN,15,200,0,0,5,~,1
+^FD[@encajonado.scodbar@]^FS
+
+
+^FX Datos codigo, encajonado, plan
+
+^FT990,680^A0B,42^FDPlan [@Planesdetallesalida.planid@]^FS
+^FT1030,680^A0B,42^FDCod. [@mercaderias.scodigo@]^FS
+^FT1075,680^A0B,42^FDCaja [@encajonado.scodbar@]^FS
+
+^FO960,0
+^GB115,300,5,b,3^fs
+^FT1070,300^A0B,60,45^FB280,2,,c^FD[@Contramarcas.sDescripcion@]^FS
+
+^PQ1,0,1,Y^XZ

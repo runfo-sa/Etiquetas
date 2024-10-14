@@ -137,8 +137,8 @@
 
 ^FX Contramarca
 ^FO350,115
-^GB55,400,2,b,1^fs
-^FT395,575^A0B,50^FB500,1,,c^FD[@Contramarcas.sDescripcion@]^FS
+^GB60,400,2,b,1^fs
+^FT395,575^A0B,70,50^FB500,1,,c^FD[@Contramarcas.sDescripcion@]^FS
 
 ^FX Imagenes
 ^FX Logo argentina

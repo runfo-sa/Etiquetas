@@ -7,8 +7,8 @@
 ^SEE:GB.DAT
 
 ^LT50 ^FX Label Top
-^MTT ^FX Metodo Transferencia
-^LH40,450
+^MTD ^FX Metodo Transferencia
+^LH20,450
 ^CI28 ^FX Juego de caracteres
 ^PW1200 ^FX Ancho de impresion
 ~JSN
@@ -97,5 +97,5 @@ eJxjYBg+oP7//z9Aiv8/EEC4YPo/hGaG0uxQmh9Ky0NpezS6Hkr/x04zEkkzo9EwcYg5/4jyFchfjFD1
 eJzt0jFqwzAUBuCnCqLNXjuIuNALtJsKpr5KoBdIKBSXQmsw1FtygZKTdLAxOFt7gQ4KGroFhwzVYJIKS7albu3UIW/yJ1vv/bYMcKw/1NQRqmtum9RS2AsEpGgG+hk0/HFwlCrfnfWOsdxwfjEMw7XyMHJyk6xyy0Io5zzvvUvKIl93CerJrCmLoqhNWDm9bBRLcx838RUHlGbGhEbqSZTORaLT0oC3y8Zk6SetP83+g15nb6b/l2508WHmr3Mzt8uD5RPhTe+YyMNiu0cmH4SjcDW/95Bug/NTCMkL8yAf63EcWOvo0MZRjpWvO2cc14SyBgK/fb4CLD3K9oDb/WijJowp8wG9tgPUwdCQMtIFDJXj1joQhVEovdkCTCAPVN73reqn32ukjvuQrRvA+jucdMfQX/y20Cr1hXQciL3tkp4vXeO5beG6EoHrW7+091cPxP4/URWhnXQMu8R28NNMOPYjx88kKC0f6//UN4QJpls=:842C
 
 
-^PQ1,0,1,Y
+^PQ[@COPIAS@],0,1,Y
 ^XZ

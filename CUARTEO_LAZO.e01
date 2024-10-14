@@ -47,5 +47,12 @@
 ^BY2,3,100^FT250,1200^BXN,12,200,0,0,2,~,1
 ^FD[@stock.sCODBAR@]^FS
 
+^FX Datamatrix Rio
+^BY2,3,100^FT175,1600^BXN,12,200,0,0,2,~,1
+^FD[@CodbarParaRio@]^FS
+
+^FT175,1650^A0N,40
+^FD[@CodbarParaRio@]^FS
+
 ^PQ1
 ^XZ

@@ -34,6 +34,8 @@
 ^FT8,400^A0N,42,40^FH\^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
 ^ci28
 
+^FO850,235^GB250,40,2,,^FS ^FX Recuadro contramarca
+^FT855,267^A0N,33,30^fh\^FD[@Contramarcas.sDescripcion@]^FS
 
 ^FX Definicion de cuarto 
 ^FT0,305^A1N,44^FH%^FD[@DefinicionesCuartos.sDescripcion;FI17@]^FS

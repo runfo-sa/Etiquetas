@@ -45,9 +45,6 @@
 ^FX Origen: Bs As Argentina
 ^FT165,1025^A1B,33^FB800,1,0,R^FH%^FD%E5%8E%9F%E4%BA%A7%E5%9C%B0%3A%E5%B8%83%E5%AE%9C%E8%AF%BA%E6%96%AF%E8%89%BE%E5%88%A9%E6%96%AF-%E9%98%BF%E6%A0%B9%E5%BB%B7^FS
 
-^FT320,440^A0B,80,75^FB240,1,0,R^FH\^FD[@MercaderiasTraducciones.sDescripcion8@]^FS ^FX VL97 en cortes que lo piden
-^FT400,460^A0B,50,45^FH%^FD[@MercaderiasTraducciones.sDescripcion6@]^FS ^FX Block packed en cortes que lo piden
-
 ^FT440,490^A0B,33^FB100,1,0,R^FH\^FDLOTE^FS
 ^FT470,490^A0B,33^FB100,1,0,R^FH\^FDLOT^FS
 ^FT465,380^A0B,58^FH%^FD%E6%89%B9%E5%8F%B7: [@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS ^FX Lote
@@ -71,10 +68,10 @@
 ^FT595,1075^A1B,58^FB300,1,0,C^FH%^FD%E6%9C%89%E6%95%88%E6%9C%9F%E8%87%B3^FS ^FX Fecha vencimiento
 ^FT650,1075^A0B,58^FB300,1,0,C^FH\^FD[@Fechavencimiento.dfecha;FFdd/MM/yyyy@]^FS
 
-^LRY^FO480,150
-^GB55,620,28,b,3^fs
-^FT525,775^A0B,50^FB630,1,,c^FD[@Contramarcas.sDescripcion@]^FS
-^LRN
+^FX Contramarca
+^FO215,200
+^GB150,500,4,b,3^fs
+^FT360,690^A0B,80^FB480,2,,c^FD[@Contramarcas.sDescripcion@]^FS
 
 ^FT565,775^A0B,33,28^FB630,1,0,C^FH%^FDKEEP FROZEN BELOW -18%C2%B0C. DO NOT REFREEZE^FS
 ^FT598,775^A0B,33,22^FB630,1,0,C^FH%^FDCONSERVAR CONGELADO POR DEBAJO DE -18%C2%B0C. NO RECONGELAR^FS

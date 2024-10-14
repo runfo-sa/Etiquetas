@@ -1,8 +1,14 @@
-﻿^XA
+^XA
+
 ^LT0
 ^LH60,120
 ^PW1200
 ^CI28
+
+^FX Font link
+^CW1,E:assistB.TTF 
+^CW2,E:assistEB.TTF 
+^SEE:GB.DAT
 
 ^FX Logo Argentina 3203
 ^FO820,360
@@ -22,7 +28,7 @@
 ^FT0,180^A0N,50,50^FH%^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
 
 ^FX Datos Elaborador
-^FT0,275^A0N,36^FB400,2^FH\^FDEstablecimiento Faneador y Elaborador^FS
+^FT0,275^A0N,36^FB400,2^FH\^FDEstablecimiento Faenador y Elaborador^FS
 ^FT0,355^A0N,36^FB400,2^FH\^FDSlaughterhouse and Production Establishment^FS
 ^FT0,440^A0N,36^FB800,2
 ^FH%^FDEst. N%C2%B0 Of. 3203 - Av Rio de La Plata 7650, Virrey del Pino, La Matanza, Buenos Aires, Argentina^FS
@@ -55,32 +61,38 @@
 
 ^FX Datos Congelado
 ^FT0,740^A0N,33^FH%^FDCONSERVAR CONGELADO A -18%c2%b0C - NO RECONGELAR^FS
-^FT0,780^A0N,33^FH%^FDKEEP FROZEN BELOW -18%c2%b0C - DO NOT REFREEZE^FS
+^FT0,770^A0N,33^FH%^FDKEEP FROZEN BELOW -18%c2%b0C - DO NOT REFREEZE^FS
+^FPR,0^FT800,800^A2N,33^FB800,1,0,L^FH%^FD%D7%90%D7%99%D7%9F%20%D7%9C%D7%94%D7%A7%D7%A4%D7%99%D7%90%20%D7%A9%D7%A0%D7%99%D7%AA%20%D7%9C%D7%90%D7%97%D7%A8%20%D7%94%D7%A4%D7%A9%D7%A8%D7%94.%09%D7%90%D7%97%D7%A1%D7%A0%D7%94%3A%20%D7%91%D7%94%D7%A7%D7%A4%D7%90%D7%94%20C%C2%B081-%20%D7%A6%D7%9C'^FS
 
-^FT0,820^A0N,33,36^FH\^FDFecha de Faena^FS
-^FT0,850^A0N,33,36^FH\^FDSlaugther Date^FS
-^FT0,890^A0N,33,36^FH%^FDFecha de Elaboraci%C3%B3n^FS
-^FT0,920^A0N,33,36^FH\^FDElaboration Date^FS
-^FT0,960^A0N,33,36^FH%^FDFecha de Congelaci%C3%B3n^FS
-^FT0,990^A0N,33,36^FH\^FDBest Before^FS
-^FT0,1030^A0N,33,36^FH\^FDFecha de Vencimiento^FS
-^FT0,1060^A0N,33,36^FH\^FDBest Before^FS
+^FT0,850^A0N,33,36^FH\^FDFecha de Faena^FS
+^FT0,880^A0N,33,36^FH\^FDSlaugther Date / ^FS
+^FPR,0^FT540,880^A2N,33,36^FB380,1,0,C^FH%^FD%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%A9%D7%97%D7%99%D7%98%D7%94^FS
+^FT0,920^A0N,33,36^FH%^FDFecha de Elaboraci%C3%B3n^FS
+^FT0,950^A0N,33,36^FH\^FDElaboration Date / ^FS
+^FPR,0^FT550,950^A2N,33,36^FB380,1,0,C^FH%^FD%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%99%D7%99%D7%A6%D7%95%D7%A8^FS
+^FT0,990^A0N,33,36^FH\^FDFecha de Vencimiento^FS
+^FT0,1020^A0N,33,36^FH\^FDBest Before / ^FS
+^FPR,0^FT465,1020^A2N,33,36^FB380,1,0,C^FH%^FD%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%20%D7%A2%D7%93^FS
 
-^FT650,845^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
-^FO0,857^GB950,0,2^FS
-^FT650,915^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
-^FO0,927^GB950,0,2^FS
-^FT650,985^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
-^FO0,997^GB950,0,2^FS
-^FT650,1055^A0N,58,57^FH\^FD[@Fechavencimiento.dFecha;FFdd/MM/yyyy@]^FS
+^FT650,870^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+^FO0,887^GB950,0,2^FS
+^FT650,940^A0N,58,57^FH\^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+^FO0,957^GB950,0,2^FS
+^FT650,1010^A0N,58,57^FH\^FD[@Fechavencimiento.dFecha;FFdd/MM/yyyy@]^FS
+^FO0,1027^GB950,0,2^FS
+
+^FX Menudencias Congeladas
+^FT0,1060^A0N,33,36^FDMENUDENCIAS VACUNAS CONGELADAS  / ^FS
+^FPR,0^FT840,1060^A2N,33,36^FB500,1,0,L^FH%^FD%D7%91%D7%A9%D7%A8%20%D7%91%D7%A7%D7%A8%20%D7%A7%D7%A4%D7%95%D7%90^FS
 
 ^FX Extras
 ^FT0,1090^A0N,30^FH\^FDVenta al peso^FS
 ^FT0,1120^A0N,30^FH\^FDSale per weight^FS
+^FT0,1150^A0N,30^FH\^FDORIGEN ARGENTINA^FS
 ^FT600,1110^A0N,37,36^FH\^FDLOTE: [@identificadores.dFechaProduccion;FFyyyyMMdd@]^FS 
 ^FT600,1150^A0N,37,36^FH\^FDTROPA: [@DatosFrigo.iTropa@]^FS 
 ^FT600,1190^A0N,37,36^FH\^FDCODIGO: [@Mercaderias.sCodigo@]^FS
-^FT600,1250^A0N,29,24^FH\^FDORIGEN ARGENTINA^FS
+^FT600,1230^A0N,37,36^FH\^FDCANTIDAD: [@Stock.nCantidad;FD0-FCNO@]^FS
 
 ^FX Barcode Big
 ^BY5,3,105
@@ -95,7 +107,6 @@
 ^FDHM,N[@stock.scodbar@]^FS
 ^FX codbar RUNFO texto
 ^FT0,1420^A0N,45^FD[@stock.scodbar@]^FS
-
 
 ^PQ1,0,1,Y
 ^XZ

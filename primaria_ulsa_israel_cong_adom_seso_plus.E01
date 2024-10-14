@@ -7,7 +7,7 @@
 ^SEE:GB.DAT
 
 ^LT50 ^FX Label Top
-^MTT ^FX Metodo Transferencia
+^MTD ^FX Metodo Transferencia
 ^LH80,450
 ^CI28 ^FX Juego de caracteres
 ^PW1200 ^FX Ancho de impresion

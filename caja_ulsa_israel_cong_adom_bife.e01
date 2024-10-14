@@ -129,7 +129,7 @@
 
 ^FX Datos codigo, encajonado, plan
 ^FT992,1400^A0B,45,55^FH\^FDCAJA [@encajonado.scodbar@]^FS
-^FT890,1270^A0I,33^FH\^FDPlan [@MercaderiasTraducciones.sDescripcion2@][@Planesdetallesalida.planid@]^FS
+^FT890,1270^A0I,33^FH\^FDPlan [@Planesdetallesalida.planid@]^FS
 ^FT890,1310^A0I,33,26^FH\^FD[@mercaderias.scodigo@]^FS 
 
 ^FX Version
