@@ -1,8 +1,9 @@
 ﻿^XA
 
 ^LH20,25
+^PR2,2
 ~JSO ^FX Desactivar Backfeed!
-^LL1470
+^LL1770
 ^CI10
 
 ^FX Etiqueta 1
@@ -54,7 +55,7 @@
 ^FX Recuadro tipificador
 ^FO180,930^GB360,210,6^FS
 ^FT187,975^A0N,39,46^FB352,1,,C^FDTIPIFICADOR^fs
-^FT210,1087^A0N,135,150^FB330,1,,C^FD[@tipificadores.sNroHabilitacion@]^fs
+^FT195,1087^A0N,135^FB330,1,,C^FD[@tipificadores.sNroHabilitacion@]^fs
 ^FT187,1125^A0N,39,46^FB352,1,,C^FDMATRICULADO^fs
 
 ^FX Hilton?
@@ -142,7 +143,7 @@
 ^FX Recuadro tipificador
 ^FO180,930^GB360,210,6^FS
 ^FT187,975^A0N,39,46^FB352,1,,C^FDTIPIFICADOR^fs
-^FT210,1087^A0N,135,150^FB330,1,,C^FD[@tipificadores.sNroHabilitacion@]^fs
+^FT195,1087^A0N,135^FB330,1,,C^FD[@tipificadores.sNroHabilitacion@]^fs
 ^FT187,1125^A0N,39,46^FB352,1,,C^FDMATRICULADO^fs
 
 ^FX Hilton?
@@ -176,94 +177,5 @@
 ^FX datamatrix
 ^FO37,870^BXB,12,200,,,4,,2
 ^FH\^FD[@codbarCuartoB@]^FS
-
-^XZ
-
-
-^XA
-
-^FX Etiqueta 3
-^FX Datos establecimiento
-^FT0,210^A0N,34,36^FH\^FDEst. Faenador: RUNFO SA    Cod. ONCCA: 5    Mat: 338-5^FS
-^FT0,244^A0N,34,36^FH\^FDEst.Nro.Oficial Senasa: 3203     CUIT: 33-65324954-9^FS
-^FO0,247^GB855,0,1^FS ^FX linea separadora
-^FT0,279^A0N,34,36^FH\^FDTitular de Faena: [@Usuarios.sDescripcion@]^FS
-^FT0,316^A0N,34,36^FH\^FDMat.: [@Usuarios.sMatricula@]^FS
-^FT465,316^A0N,34,36^FH\^FDCUIT: [@Usuarios.sCuit@]^FS
-^FO0,322^GB825,0,1^FS ^FX Linea separadora
-
-^FX Fecha faena
-^FT60,457^A0B,34,36^FB100,2,,L^FH\^FDFecha faena:^FS
-^FT90,457^A0N,153^FB750,1,,L^FH\^FD[@datosfrigo.dFechafaena;FFdd/MM/yyyy@]^FS
-
-^FX Tabla detalles media
-^FO0,474^GB825,135,1^FS ^FX recuadro
-^FO0,519^GB825,0,1^FS ^FX linea horizontal
-^FO165,474^GB0,135,1^FS ^FX lineas verticales
-^FO330,474^GB0,135,1^FS ^FX lineas verticales
-^FO450,474^GB0,135,1^FS ^FX lineas verticales
-^FO648,474^GB0,135,1^FS ^FX lineas verticales
-^FT0,510^A0N,34,36^FB165,1,,C^FH\^FDGarr\A2n^FS
-^FT165,510^A0N,34,36^FB165,1,,C^FH\^FDContusi\A2n^FS
-^FT330,510^A0N,34,36^FB120,1,,C^FH\^FDDientes^FS
-^FT450,510^A0N,34,36^FB202,1,,C^FH\^FDClasificaci\A2n^FS
-^FT652,510^A0N,34,36^FB172,1,,C^FH\^FDTipificaci\A2n^FS
-^FT0,600^A0N,90,82^FB165,1,,C^FH\^FD[@GARRON.hGarron@]^FS
-^FT165,600^A0N,90,82^FB165,1,,C^FH\^FD[@Contusiones.sCodigo@]^FS
-^FT330,600^A0N,90,82^FB120,1,,C^FH\^FD[@Dientes.hDientes@]^FS
-^FT450,600^A0N,90,82^FB202,1,,C^FH\^FD[@clasificaciones.sCodigoImprimir@]^FS
-^FT652,600^A0N,90,82^FB172,1,,C^FH\^FD[@Tipificaciones.sCodigo@][@grasa.sCodigo@]^FS
-
-^FX Recuadro Peso del animal
-^FO0,615^GB412,225,6^FS
-^FT15,810^A0N,225^FB334,1,,R^FH\^FD[@Stock.iPeso;FK0@]^FS
-^FT345,810^A0N,42^FH\^FDKg^FS
-
-^FX recuadro Tropa
-^FO420,615^GB540,225,6^FS
-^FT420,663^A0N,42,54^FB540,1,,C^FH\^FDTROPA^FS
-^FT420,822^A0N,202,175^FB540,1,,C^FH\^FD[@DatosFrigo.iTROPA@]^FS
-
-^FX Destino comercial
-^FT180,879^A0N,42^FH\^FDDestino Comercial CT: [@DestinosComerciales.sCodigo_CT@]^FS
-^FT180,921^A0N,42^FH\^FDDestino Comercial CD: [@DestinosComerciales.sCodigo_CD@]^FS
-
-^FX Recuadro tipificador
-^FO180,930^GB360,210,6^FS
-^FT187,975^A0N,39,46^FB352,1,,C^FDTIPIFICADOR^fs
-^FT210,1087^A0N,135,150^FB330,1,,C^FD[@tipificadores.sNroHabilitacion@]^fs
-^FT187,1125^A0N,39,46^FB352,1,,C^FDMATRICULADO^fs
-
-^FX Hilton?
-^FT660,1125^A0N,360^FD[@Amparos.sCodigo;FI1@]^FS
-
-^FX Angus
-^FT660,1125^A0B,135,165^FD[@DatosFrigo.sAngus@]^FS
-
-^FX Usuario
-^FT180,1260^A0N,150,112^FH\^FD[@Usuarios.sDescripcion@]^FS
-
-
-^FX Codigos de barras
-
-^FX Codbar media vertical
-^BY4,3,82^FT877,90^BCR,,N,N,N
-^FD>;[@stock.sCODBAR@]^FS
-^FT832,255^A0R,46,49^FH\^FD[@stock.sCODBAR@]^FS
-
-^FX Codbar media horizontal
-^BY4,3,105^FT180,135^BCN,N,Y,n,n
-^FD>;[@stock.sCODBAR@]^FS
-
-^FX Identificador de cuarto
-^FT45,135^A0N,135^FDC^FS
-
-^FX Codbar cuarto horizontal
-^BY4,3,120^FO45,1290^BCN,N,Y,n,n
-^FD>:[@codbarCuartoC@]^FS
-
-^FX datamatrix
-^FO37,870^BXB,12,200,,,4,,2
-^FH\^FD[@codbarCuartoC@]^FS
 
 ^XZ

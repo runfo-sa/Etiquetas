@@ -1,10 +1,14 @@
-﻿^XA
+^XA
 
 ^LT0
 ^LH0,0
 ^PW1200
 ^FO40,40
 ^GB1140,1740,20,B,0^FS
+
+^FX Start Metadata#Labelary
+^FX ProductId: 1871
+^FX End Metadata
 
 ^LH70,70
 ^CI0

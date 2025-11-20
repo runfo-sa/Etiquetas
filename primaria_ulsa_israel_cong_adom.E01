@@ -6,16 +6,17 @@
 ^CW2,E:assistEB.TTF 
 ^SEE:GB.DAT
 
-^LT50 ^FX Label Top
+^LT0 ^FX Label Top
 ^MTD ^FX Metodo Transferencia
-^LH40,440
+^LH20,490
 ^CI28 ^FX Juego de caracteres
 ^PW1200 ^FX Ancho de impresion
 ~JSN
 ^JZN
 
-^FO350,275^GB345,50,25,B,2^FS
-^FT300,320^A0N,55^FB460,1,,C^FH%^FR^FD[@MercaderiasTraducciones.sDescripcion6@]^FS
+^FO330,275^GB350,75,50,B,2^FS
+^FT330,330^A0N,50^FB375,1,,C^FH%^FR^FD[@MercaderiasTraducciones.sDescripcion6@]^FS
+^FT290,405^A0N,60,80^FB460,1,,C^FH%^FR^FD[@MercaderiasTraducciones.sDescripcion3@]^FS
 
 ^FT1020,1060^A0N,18,22^FH%^FDRED01^FS
 
@@ -63,7 +64,7 @@
 
 ^FX DATOS INTERNOS
 ^FT1040,1040^A0B,28,40^FH\^FD[@Primarias.sCodbar@]^FS
-^FT1090,960^A0B,25,28^FH\^FD[@MercaderiasTraducciones.sDescripcion2@][@PlanesDetalleSalida.PlanId@]^FS
+^FT1090,960^A0B,25,28^FH\^FD[@PlanesDetalleSalida.PlanId@]^FS
 ^FT1090,1040^A0B,25^FH\^FD[@Primarias.iPeso@]^FS
 ^FT1065,1040^A0B,25,40^FH\^FD[@Mercaderias.sCodigo@]^FS
 
@@ -72,7 +73,7 @@
 ^FD[@Primarias.sCodbar@]^FS
     
 ^FX texto importador
-^FPR,0^FT400,600^A1N,28^FB600,6,,L^FH%^FD[@MercaderiasTraducciones.sDescripcion7@][@MercaderiasTraducciones.sDescripcion8@]^FS
+^FPR,0^FT380,600^A1N,28^FB600,6,,L^FH%^FD[@MercaderiasTraducciones.sDescripcion7@][@MercaderiasTraducciones.sDescripcion8@]^FS
 
 ^FPR,0^FT50,260^A1B,24^FB600,1,,L^FH%^FD%D7%91%D7%A9%D7%A8%20%D7%91%D7%A7%D7%A8%20%D7%A7%D7%A4%D7%95%D7%90^FS
 

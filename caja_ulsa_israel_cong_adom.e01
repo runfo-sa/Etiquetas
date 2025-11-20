@@ -1,4 +1,4 @@
-﻿^XA
+^XA
 
 ^LT0
 ^LH40,0
@@ -34,7 +34,6 @@
 ^FT500,950^A0B,50^FB500,1,,c^FD[@Contramarcas.sDescripcion@]^FS
 
 ^FO430,0^GB0,1675,4^FS ^FX linea separacion mercaderia-detalle
-^FT120,670^A0B,70^FH%^FD[@MercaderiasTraducciones.sDescripcion4@]^FS
 
 ^FX Datos Produccion
 

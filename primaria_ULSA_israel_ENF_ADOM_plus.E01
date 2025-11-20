@@ -16,6 +16,7 @@
 
 ^FO360,275^GB345,50,25,B,2^FS
 ^FT310,320^A0N,55^FB460,1,,C^FH%^FR^FD[@MercaderiasTraducciones.sDescripcion6@]^FS
+^FT290,405^A0N,60,80^FB460,1,,C^FH%^FR^FD[@MercaderiasTraducciones.sDescripcion3@]^FS
 
 ^FT1020,1060^A0N,18,22^FH%^FDRED01^FS
 

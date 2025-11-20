@@ -2,8 +2,10 @@
 ^FX Label Cuarteo - 12/05/2021
 
 ~JSA ^FX Backfeed
-^LH20,450
+^LH120,100
 ^CI0
+^PON
+^MNM
 
 ^FX recuadro para diseño - no esta en uso
 ^FxO0,0GB420,1260,4fs

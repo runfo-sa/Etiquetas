@@ -1,4 +1,4 @@
-﻿^XA
+^XA
 ^FX Etiqueta ULSA Israel Enfriado
 
 ^FX Font link
@@ -6,23 +6,23 @@
 ^CW2,E:assistEB.TTF 
 ^SEE:GB.DAT
 
-^LT50 ^FX Label Top
+^LT0 ^FX Label Top
 ^MTD ^FX Metodo Transferencia
-^LH40,450
+^LH20,490
 ^CI28 ^FX Juego de caracteres
 ^PW1200 ^FX Ancho de impresion
 ~JSN
 ^JZN
 
-^FO340,205^GB345,50,25,B,2^FS
-^FT290,250^A0N,55^FB460,1,,C^FH%^FR^FD[@MercaderiasTraducciones.sDescripcion6@]^FS
+^FO330,205^GB350,75,50,B,2^FS
+^FT330,265^A0N,50^FB375,1,,C^FH%^FR^FD[@MercaderiasTraducciones.sDescripcion6@]^FS
 
 ^FT1020,1060^A0N,18,22^FH%^FDRED01^FS
 
 ^FX NOMBRE PRODUCTO ESPAÑOL. REF: PANTALLA 205, IDIOMA Español
 ^FT250,705^A0N,33^FB700,1,0,R^FH%^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
 ^FX Nombre del Corte REF: Pantalla 205
-^FPR,0^FT950,645^A1N,90,65^FB1040,1,0,L^FH%^FD[@MercaderiasTraducciones.sDescripcion17@]^FS
+^FPR,0^FT1000,645^A1N,80,60^FB1040,1,0,L^FH%^FD[@MercaderiasTraducciones.sDescripcion17@]^FS
 
 ^FX CODBAR EAN13 CLIENTE. PANTALLA 0011
 ^FT660,880^BY3
@@ -63,7 +63,7 @@
 
 ^FX DATOS INTERNOS
 ^FT1040,1040^A0B,28,40^FH\^FD[@Primarias.sCodbar@]^FS
-^FT1090,960^A0B,25,28^FH\^FD[@MercaderiasTraducciones.sDescripcion2@][@PlanesDetalleSalida.PlanId@]^FS
+^FT1090,960^A0B,25,28^FH\^FD[@PlanesDetalleSalida.PlanId@]^FS
 ^FT1090,1040^A0B,25^FH\^FD[@Primarias.iPeso@]^FS
 ^FT1065,1040^A0B,25,40^FH\^FD[@Mercaderias.sCodigo@]^FS
 
@@ -72,7 +72,7 @@
 ^FD[@Primarias.sCodbar@]^FS
     
 ^FX texto importador
-^FPR,0^FT400,560^A1N,28^FB600,6,,L^FH%^FD[@MercaderiasTraducciones.sDescripcion7@][@MercaderiasTraducciones.sDescripcion8@]^FS
+^FPR,0^FT380,540^A1N,28^FB600,6,,L^FH%^FD[@MercaderiasTraducciones.sDescripcion7@][@MercaderiasTraducciones.sDescripcion8@]^FS
 
 ^FPR,0^FT1090,650^A1B,24^FB600,1,,L^FH%^FD%D7%91%D7%A9%D7%A8%20%D7%91%D7%A7%D7%A8%20%D7%98%D7%A8%D7%99%20%D7%9C%D7%9C%D7%90%20%D7%A2%D7%A6%D7%9D^FS                                                                                                                                     
 ^FX Instrucciones de almacenado

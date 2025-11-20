@@ -7,7 +7,6 @@
 ^LT35 ^FX Label Top
 ^LH30,0 ^FX Label Home
 ^JZN ^FX No reimprimir
-~sd16
 ^CI28
 ^CW1,E:ANMDS.TTF 
 ^SEE:GB.DAT

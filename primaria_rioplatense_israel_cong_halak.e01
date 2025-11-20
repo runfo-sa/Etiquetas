@@ -1,0 +1,92 @@
+﻿^XA
+
+^FX Start Metadata#Labelary
+^FX ProductId: 1713
+^FX End Metadata
+
+^FX Font link
+^CW1,E:assistB.TTF 
+^CW2,E:assistEB.TTF 
+^SEE:GB.DAT
+
+^LT0 ^FX Label Top
+^MTD ^FX Metodo Transferencia
+^LH20,490
+^CI28 ^FX Juego de caracteres
+^PW1200 ^FX Ancho de impresion
+~JSN
+^JZN
+
+^FT1120,650^A0B,18,22^FH%^FDRAI01^FS
+
+^FX Nombre del Corte - Hebreo
+^FPR,0^FT675,250^A1N,80,65^FB720,2,0,L^FH%^FD[@MercaderiasTraducciones.sDescripcion17@]^FS
+^FX Nombre del Corte - EspaÃ±ol
+^FT10,300^A0N,40^FB700,1,0,L^FH%^FD[@MercaderiasTraducciones.sDescripcion5@]^FS
+
+^FX CODBAR EAN13 CLIENTE. PANTALLA 0011
+^FT775,700^BY3
+^BEN,160,y,n
+^FD[@Mercaderias.sEan@]^FS
+
+^FX Fechas
+^FO10,385^GB670,168,2^FS
+^FO10,441^GB670,0,2^FS
+^FO10,497^GB670,0,2^FS
+
+^FT20,425^A0N,22^FDULTIMA FECHA DE VENTA:^FS
+^FPR,0^FT650,427^A1N,33,28^FB1040,1,0,L^FH%^FD%D7%9C%D7%A9%D7%99%D7%9E%D7%95%D7%A9%20%D7%A2%D7%93 :^FS
+^FT300,427^A0N,33,28^FD[@FechaVencimiento.dFecha;FFdd/MM/yyyy@]^FS
+
+^FT20,483^A0N,22^FDFECHA PRODUCCION:^FS
+^FPR,0^FT650,485^A1N,33,28^FB1040,1,0,L^FH%^FD%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%99%D7%99%D7%A6%D7%95%D7%A8 :^FS
+^FT300,485^A0N,33,28^FD[@identificadores.dFechaProduccion;FFdd/MM/yyyy@]^FS
+
+^FT20,537^A0N,22^FDFECHA FAENA:^FS
+^FPR,0^FT650,539^A1N,33,28^FB1040,1,0,L^FH%^FD%D7%AA%D7%90%D7%A8%D7%99%D7%9A%20%D7%A9%D7%97%D7%99%D7%98%D7%94 :^FS
+^FT300,539^A0N,33,28^FD[@PrimariaDatosFrigo.dFechaFaena;FFdd/MM/yyyy@]^FS
+
+^FX Pie de etiqueta
+^FT0,900^A0N,20,27^FD[@definicionescuartos.sDescripcion;FI5@]^FS
+^FT0,920^A0N,20,22^FH%^FDESTABLECIMIENTO FAENADOR/SACRIFICADO EN: ESTAB. N%C2%B0 OFICIAL 3203^FS
+^FT0,940^A0N,20^FH%^FDESTABLECIMIENTO ELABORADOR/DESPIECE EN: ESTAB. N%C2%B0 OFICIAL 3203 RUNFO SA^FS
+^FT0,960^A0N,20,25^FH%^FDAV. RIO DE LA PLATA 7650, VIRREY DEL PINO, BS AS, ARGENTINA^FS
+^FT0,980^A0N,20^FDORIGEN ARGENTINA - VENTA AL PESO [@MercaderiasTraducciones.sDescripcion1@]^FS
+
+^FX COD SENASA. Pantalla 11
+^FT175,1070^A0N,30,28^FH%^FD[@Mercaderias.sCodSenasa@]^FS
+
+^FT245,1012^A0N,25^FB450,1,,r\^FDLOTE/TROPA: [@identificadores.dFechaProduccion@]/[@PrimariaDatosFrigo.iTropa@]^FS
+
+^FO10,990
+^GB380,26,2,B,1^FS
+^FT10,1012^A0N,25^FB380,1,,c^FD[@Contramarcas.sDescripcion@]^FS
+
+^FX DATOS INTERNOS
+^FT350,1095^A0N,25^FB300,1,,C^FH\^FD[@PlanesDetalleSalida.PlanId@]    [@Primarias.iPeso@]^FS
+^FT350,1065^A0N,25,30^FB300,1,,C^FH\^FD[@Mercaderias.sCodigo@]^FS
+
+^FX Datamatrix
+^FO100,575^BXN,8,200,0,0,1,~,1
+^FD[@Primarias.sCodbar@]^FS
+^FT50,710^A0N,25,30^FH\^FD[@Primarias.sCodbar@]^FS
+
+^FX Datamatrix Replica
+^FO950,890^BXN,8,200,0,0,1,~,1
+^FD[@Primarias.sCodbar@]^FS
+^FT900,1025^A0N,25,30^FH\^FD[@Primarias.sCodbar@]^FS
+
+^FX texto importador
+^FPR,0^FT680,750^A1N,28^FB600,6,,L^FH%^FD[@MercaderiasTraducciones.sDescripcion7@][@MercaderiasTraducciones.sDescripcion8@]^FS
+
+^FX Instrucciones de almacenadod
+^FPR,0^FT1120,820^A1N,24^FB900,1,,L^FH%^FD%D7%90%D7%97%D7%A1%D7%A0%D7%94%3A%20%D7%A0%D7%90%20%D7%9C%D7%90%D7%97%D7%A1%D7%9F%20%D7%91%D7%94%D7%A7%D7%A4%D7%90%D7%94%20%20C%C2%B081-%20%D7%A6%D7%9C%27^FS
+^FPR,0^FT1120,850^A1N,24^FB900,1,,L^FH%^FD%D7%90%D7%99%D7%9F%20%D7%9C%D7%94%D7%A7%D7%A4%D7%99%D7%90%20%D7%A9%D7%A0%D7%99%D7%AA%20%D7%9C%D7%90%D7%97%D7%A8%20%D7%94%D7%A4%D7%A9%D7%A8%D7%94^FS
+
+^FX Shell life
+^FPR,0^FT560,330^A1N,28^FB1040,1,0,L^FH%^FD[@MercaderiasTraducciones.sDescripcion22@]^FS
+^FX Palabra random en Hebreo
+^FPR,0^FT650,362^A1N,24^FB1040,1,0,L^FH%^FD%D7%91%D7%A9%D7%A8%20%D7%91%D7%A7%D7%A8%20%D7%A7%D7%A4%D7%95%D7%90^FS
+
+^PQ1,0,1,Y
+^XZ

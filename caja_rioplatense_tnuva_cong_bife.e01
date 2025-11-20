@@ -116,8 +116,8 @@
 
 ^FX codbar cliente 2
 ^BY5,3,105^FT1020,950^BCB,,N,N
-^FD>;72[@ContadorCaja@][@JulianoProduccion@][@MercaderiasTraducciones.sDescripcion9@][@Stock.ipeso;FK00.00-FPNO@][@AnoDigitoProduccion@]^FS
-^FT1070,900^A0B,60^FH\^FD72[@ContadorCaja@][@JulianoProduccion@][@MercaderiasTraducciones.sDescripcion9@][@Stock.ipeso;FK00.00-FPNO@][@AnoDigitoProduccion@]^FS
+^FD>;36[@ContadorCaja@][@JulianoProduccion@][@MercaderiasTraducciones.sDescripcion9@][@Stock.ipeso;FK00.00-FPNO@][@AnoDigitoProduccion@]^FS
+^FT1070,900^A0B,60^FH\^FD36[@ContadorCaja@][@JulianoProduccion@][@MercaderiasTraducciones.sDescripcion9@][@Stock.ipeso;FK00.00-FPNO@][@AnoDigitoProduccion@]^FS
 
 ^FX datamatrix
 ^BY198,198^FT55,200^BXN,15,200,0,0,5,~,1

@@ -133,7 +133,7 @@
 ^FX Contramarca
 ^FO675,205
 ^GB300,55,2,b,1^fs
-^FT625,245^A0N,40^FB400,1,,c^FD[@Contramarcas.sDescripcion@]^FS
+^FT625,245^A0N,36^FB400,1,,c^FD[@Contramarcas.sDescripcion@]^FS
 
 ^FX Ahora las imagenes
 

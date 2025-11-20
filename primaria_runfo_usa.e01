@@ -1,0 +1,26 @@
+﻿^XA
+
+^PW1200 ^FX Ancho de impresion
+^LT0 ^FX Label Top
+^LH0,0 ^FX Label Home
+^MTT ^FX Trasferencia termica
+~JSN ^FX Backfeed normal
+^JZN ^FX No reimprimir
+^CI28
+
+^FX Start Metadata#Labelary
+^FX ProductId: 2012
+^FX End Metadata
+
+^FX Datamatrix
+^FO70,740^BXN,8,200,0,0,1,~,1
+^FD[@Primarias.sCodbar@]^FS
+^FT30,880^A0N,25,30^FH\^FD[@Primarias.sCodbar@]^FS
+
+^FT1030,840^A0N,120^FH\^FD[@MercaderiasTraducciones.sDescripcion1@]^FS
+
+^FT375,200^A0N,150^FDTROPA:^FS
+^FT10,550^A0N,250^FB1210,1,,C^FD[@PrimariaDatosFrigo.iTropa@]^FS
+
+^PQ1,0,1,Y
+^XZ
